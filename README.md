@@ -48,6 +48,6 @@ You can read more documentation in [the Unframer repository](https://github.com/
 
 Updated by Nikhil.
 
-Maintained by Nikhil Kanda.
+Maintained by Nix.
 
 
