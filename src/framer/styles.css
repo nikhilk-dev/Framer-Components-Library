@@ -8,6 +8,8 @@
     --unframer-text-secondary-l: rgb(59, 59, 59);
     --unframer-brand: rgb(244, 92, 37);
     --unframer-text-secondary-d: rgb(217, 217, 217);
+    --unframer-icon: rgb(128, 128, 128);
+    --unframer-tags: rgb(245, 245, 245);
     --unframer-black: rgb(18, 18, 18);
     --unframer-ui-2: rgb(13, 14, 16);
     --unframer-cards: rgb(255, 255, 255);
@@ -20,10 +22,12 @@
     --unframer-text-primary-l: rgb(17, 17, 17);
     --unframer-global-grey-stroke: rgb(217, 217, 217);
     --unframer-accent: rgb(0, 128, 255);
-    --unframer-mild-stroke: rgb(235, 235, 235);
+    --unframer-week-text-l: rgb(166, 166, 166);
+    --unframer-mild-stroke: rgb(219, 219, 219);
     --unframer-white: rgb(255, 255, 255);
     --unframer-global-dark: rgb(0, 0, 0);
     --unframer-background-with-blur: rgba(245, 245, 245, 0.75);
+    --unframer-navbar-stroke: rgb(235, 235, 235);
     --unframer-stroke-on-orange: rgba(255, 255, 255, 0.5);
     --unframer-text-on-white: rgb(17, 17, 17);
     --unframer-muted-text-l: rgb(128, 128, 128);
@@ -32,6 +36,8 @@
     --token-1680a61f-616b-4800-b66d-bfa16b2c9fa1: rgb(59, 59, 59);
     --token-17586cc6-b205-4368-ade3-9f0f26d38021: rgb(244, 92, 37);
     --token-2063878f-0bc8-4251-b0e7-e528b4bac441: rgb(217, 217, 217);
+    --token-27d9d42d-bd0c-4886-9172-c857595d1f2e: rgb(128, 128, 128);
+    --token-29fa94af-f501-4946-ba12-cfd5a07e64a0: rgb(245, 245, 245);
     --token-35ce533d-90fd-45de-b94b-75330adda861: rgb(18, 18, 18);
     --token-55ed2001-fca1-48ea-b89b-ec5216d2ed8f: rgb(13, 14, 16);
     --token-732029c9-e563-420b-b3e8-807c94fb9d56: rgb(255, 255, 255);
@@ -44,10 +50,12 @@
     --token-99df6449-e9f2-4797-8ee6-4b98273d37fc: rgb(17, 17, 17);
     --token-9d5fac31-4d2a-44d0-9453-8f56ddfb83ad: rgb(217, 217, 217);
     --token-a042497d-749d-4d03-8d3a-78930210d354: rgb(0, 128, 255);
-    --token-c1b219e1-f175-48e0-870c-d1ed2360074b: rgb(235, 235, 235);
+    --token-ba016711-3d5a-4c61-a4bd-33bd09c7e8aa: rgb(166, 166, 166);
+    --token-c1b219e1-f175-48e0-870c-d1ed2360074b: rgb(219, 219, 219);
     --token-c21010f9-5cb6-4d3d-85fc-4227a6481949: rgb(255, 255, 255);
     --token-c7046da6-529c-4bf7-84f8-82aca30594c1: rgb(0, 0, 0);
     --token-cce3421e-dab3-4c51-a31e-59288abd77f7: rgba(245, 245, 245, 0.75);
+    --token-d5bd3e80-2eeb-4af7-9072-9db27645e7d9: rgb(235, 235, 235);
     --token-d7bcd8bf-122e-47f2-9db0-437f7abb82c0: rgba(255, 255, 255, 0.5);
     --token-deeb5ba0-fda3-47d0-abda-a8afb6c620bb: rgb(17, 17, 17);
     --token-df79e38c-c9e1-4fba-9890-9323ccb725c1: rgb(128, 128, 128);
@@ -58,6 +66,8 @@
     --unframer-text-secondary-l: rgba(217, 217, 217, 0.9);
     --unframer-brand: rgb(244, 92, 37);
     --unframer-text-secondary-d: rgb(59, 59, 59);
+    --unframer-icon: rgb(128, 128, 128);
+    --unframer-tags: rgb(38, 38, 38);
     --unframer-black: rgb(18, 18, 18);
     --unframer-ui-2: rgb(13, 14, 16);
     --unframer-cards: rgb(26, 26, 26);
@@ -70,10 +80,12 @@
     --unframer-text-primary-l: rgb(255, 255, 255);
     --unframer-global-grey-stroke: rgb(61, 61, 61);
     --unframer-accent: rgb(0, 128, 255);
-    --unframer-mild-stroke: rgb(31, 31, 31);
+    --unframer-week-text-l: rgb(89, 89, 89);
+    --unframer-mild-stroke: rgb(38, 38, 38);
     --unframer-white: rgb(255, 255, 255);
     --unframer-global-dark: rgb(255, 255, 255);
     --unframer-background-with-blur: rgba(18, 18, 18, 0.75);
+    --unframer-navbar-stroke: rgb(23, 23, 23);
     --unframer-stroke-on-orange: rgba(255, 255, 255, 0.5);
     --unframer-text-on-white: rgb(17, 17, 17);
     --unframer-muted-text-l: rgb(138, 138, 138);
@@ -82,6 +94,8 @@
     --token-1680a61f-616b-4800-b66d-bfa16b2c9fa1: rgba(217, 217, 217, 0.9);
     --token-17586cc6-b205-4368-ade3-9f0f26d38021: rgb(244, 92, 37);
     --token-2063878f-0bc8-4251-b0e7-e528b4bac441: rgb(59, 59, 59);
+    --token-27d9d42d-bd0c-4886-9172-c857595d1f2e: rgb(128, 128, 128);
+    --token-29fa94af-f501-4946-ba12-cfd5a07e64a0: rgb(38, 38, 38);
     --token-35ce533d-90fd-45de-b94b-75330adda861: rgb(18, 18, 18);
     --token-55ed2001-fca1-48ea-b89b-ec5216d2ed8f: rgb(13, 14, 16);
     --token-732029c9-e563-420b-b3e8-807c94fb9d56: rgb(26, 26, 26);
@@ -94,10 +108,12 @@
     --token-99df6449-e9f2-4797-8ee6-4b98273d37fc: rgb(255, 255, 255);
     --token-9d5fac31-4d2a-44d0-9453-8f56ddfb83ad: rgb(61, 61, 61);
     --token-a042497d-749d-4d03-8d3a-78930210d354: rgb(0, 128, 255);
-    --token-c1b219e1-f175-48e0-870c-d1ed2360074b: rgb(31, 31, 31);
+    --token-ba016711-3d5a-4c61-a4bd-33bd09c7e8aa: rgb(89, 89, 89);
+    --token-c1b219e1-f175-48e0-870c-d1ed2360074b: rgb(38, 38, 38);
     --token-c21010f9-5cb6-4d3d-85fc-4227a6481949: rgb(255, 255, 255);
     --token-c7046da6-529c-4bf7-84f8-82aca30594c1: rgb(255, 255, 255);
     --token-cce3421e-dab3-4c51-a31e-59288abd77f7: rgba(18, 18, 18, 0.75);
+    --token-d5bd3e80-2eeb-4af7-9072-9db27645e7d9: rgb(23, 23, 23);
     --token-d7bcd8bf-122e-47f2-9db0-437f7abb82c0: rgba(255, 255, 255, 0.5);
     --token-deeb5ba0-fda3-47d0-abda-a8afb6c620bb: rgb(17, 17, 17);
     --token-df79e38c-c9e1-4fba-9890-9323ccb725c1: rgb(138, 138, 138);
@@ -145,4 +161,740 @@
     }
 }
 
+
+
+
+/* used by copy-email.js */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.cyrillic-ext-M4WHNGTS.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.cyrillic-JVU2PANX.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.greek-DPOQGN7L.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.greek-ext-4KCQBEIZ.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.latin-ext-J4DBSW7F.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.latin-Y3IVPL46.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://app.framerstatic.com/Inter-Medium.vietnamese-PJV76O4P.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* used by hero-intro.js */
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvRviyMgvs-wJDtw.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* used by experience.js */
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvUXiyMgvs-wJDtw.woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJ8lJPg-IUDNg.woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* used by fuse-button.js, heading-with-cta.js, hero-intro.js, video-button.js, work-card-text.js */
+
+@font-face {
+    font-family: 'Geist';
+    src: url('https://fonts.gstatic.com/s/geist/v4/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4mJPby1QNtA.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* used by fuse-button.js, heading-with-cta.js, hero-intro.js, work-card-text.js */
+
+@font-face {
+    font-family: 'Geist';
+    src: url('https://fonts.gstatic.com/s/geist/v4/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* used by video-button.js */
+
+@font-face {
+    font-family: 'Geist';
+    src: url('https://fonts.gstatic.com/s/geist/v4/gyBhhwUxId8gMGYQMKR3pzfaWI_RwuM4mJPby1QNtA.woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* used by awards.js, blog-card.js, brand-website.js, captions.js, experience.js, hero-intro-button.js, hero-intro.js, hero-tabs.js, skill-labels.js, subheading-small.js, top-global-navbar.js, values-card.js */
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('https://fonts.gstatic.com/s/geistmono/v4/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KJ5W7ihaO_CS.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* used by labels.js, simple-card.js, top-global-navbar.js, work-card-text.js */
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('https://fonts.gstatic.com/s/geistmono/v4/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKJ5W7ihaO_CS.woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* used by awards.js, blog-card.js, brand-website.js, experience.js, hero-intro-button.js, hero-intro.js, hero-tabs.js, skill-labels.js, subheading-small.js, top-global-navbar.js, values-card.js */
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('https://fonts.gstatic.com/s/geistmono/v4/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeHaL55W7ihaO_CS.woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* used by career-journey.js, label.js, reel.js */
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n5i0g1l9kn-s.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* used by label.js */
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n1ioq131hj-sNFQ.woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3pQP8lJPg-IUDNg.woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSblJFgsARHNh4zg.woff2');
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* used by experience.js, grey-link.js, h-eading-big.js, heading-with-cta.js, section-heading.js, values-card.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhp8RKg4tIOm6vje.woff2');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDDV5zBaI5loa26g.woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* used by blog-card.js, experience.js, heading-with-cta.js, section-heading.js, simple-card.js, values-card.js, work-card-text.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqbQ6g4tIOm6vje.woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* used by grey-link.js, h-eading-big.js, values-card.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhqpQ6g4tIOm6vje.woff2');
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* used by blog-card.js, experience.js, simple-card.js, values-card.js, work-card-text.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V78x9OWIhrFQ6g4tIOm6vje.woff2');
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* used by awards.js, card-heading.js, grey-link.js, h-eading-big.js, simple-card.js, values-card.js, work-card-text.js, work-headings.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD2FlzBaI5loa26g.woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* used by blog-card.js, career-journey.js, experience.js, heading-with-cta.js, section-heading.js, simple-card.js, top-global-navbar.js, values-card.js, work-card-text.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llzBaI5loa26g.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* used by blog-card.js, career-journey.js, experience.js, h-eading-big.js, simple-card.js, values-card.js, work-card-text.js, work-headings.js */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDtFlzBaI5loa26g.woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* used by footer.js */
+
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATjnTNgNq55w.woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/0E7IMbDzcGABpBwwqNEt60wU0w.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/6FI2EneKzM3qBy5foOZXey7coCA.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/b8ezwLrN7h2AUoPEENcsTMVJ0.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/Bo5CNzBv77CafbxOtKIkpw9egw.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/fuyXZpVvOjq8NesCOfgirHCWyg.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/JEXmejW8mXOYMtt0hyRg811kHac.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/khkJkwSL66WFg8SX6Wa726c.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/mvNEIBLyHbscgHtwfsByjXUz3XY.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/NHHeAKJVP0ZWHk5YZnQQChIsBM.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/NTJ0nQgIF0gcDelS14zQ9NR9Q.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/QrcNhgEPfRl0LS8qz5Ln8olanl8.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/uy9s0iWuxiNnVt8EpTI3gzohpwo.woff2');
+    font-style: italic;
+    font-weight: 500;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/vxBnBhH8768IFAXAb4Qf6wQHKs.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2');
+    font-style: normal;
+    font-weight: 600;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/zSsEuoJdh8mcFVk976C05ZfQr8.woff2');
+    font-style: italic;
+    font-weight: 600;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* used by awards.js, card-heading.js, footer.js, simple-card.js */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2');
+    font-style: italic;
+    font-weight: 700;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* used by copy-email.js, footer.js */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2');
+    font-style: normal;
+    font-weight: 500;
+    unicodeRange: U+0370-03FF;
+}
+
+/* used by awards.js, blog-card.js, brand-website.js, card-heading.js, experience.js, footer.js, grey-link.js, h-eading-big.js, heading-with-cta.js, hero-intro-button.js, hero-intro.js, hero-tabs.js, image-animation.js, label.js, project-cards.js, section-heading.js, simple-card.js, skill-labels.js, subheading-small.js, top-global-navbar.js, values-card.js, work-card-text.js */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2');
+    font-style: normal;
+    font-weight: 400;
+    unicodeRange: U+1F00-1FFF;
+}
+
+/* used by awards.js, card-heading.js, simple-card.js */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0370-03FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+1F00-1FFF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2');
+    font-style: normal;
+    font-weight: 700;
+    unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2');
+    font-style: italic;
+    font-weight: 400;
+    unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* used by hero-tabs.js */
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('https://framerusercontent.com/third-party-assets/fontshare/wf/KWLZTFPEA4723LEVLYZXLKTL4WVDOH2O/IWOTC5SPMRT64SBDFF2NYBGUX2REAZU5/T7T65M73WIMKNLHBHJ7Z4UDNIFBBEYY6.woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('https://framerusercontent.com/third-party-assets/fontshare/wf/ONZH6ZASWZCELVW4GZ5FS2DD4KV34DZY/IWL64III3URHKBZSTXXZCIKPZUGZBYJJ/KVA3QGLTXVRAZQOOPC6T3N7AGN5JIOM5.woff2');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('https://framerusercontent.com/third-party-assets/fontshare/wf/Q6PBDKMW3ILHZCUUHJUL7Z5CAEUYIYJT/ACU6JUVISLUN5YPIBAVSNVQX7TIXK7LY/XVEXE7YCBGUS6ROKRHQHPQAR7KODNVQ3.woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('https://framerusercontent.com/third-party-assets/fontshare/wf/TBAM3F2B3Q62J3EFZZOFBKD7FY2D2ABJ/UXFRFNKWVYOJXQY4ZT3GUSK23QFKNFJY/FXFHMD66ZLUDCPUIIIVS5BUZ2MFAWPYU.woff2');
+    font-style: normal;
+    font-weight: 400;
+}
 
