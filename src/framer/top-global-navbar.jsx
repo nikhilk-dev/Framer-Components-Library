@@ -40,7 +40,7 @@ import { routes } from "./chunks/chunk-2F3PHDTH.js";
 import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/fBlOKv3xGqjdAnSyXXD6/wd0K_zVCd.js
+// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/IxiGPfTHelOHu5CxOeqD/wd0K_zVCd.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
 	addFonts,
@@ -79,13 +79,13 @@ var css2 = [
 ];
 var className2 = "framer-0GSex";
 
-// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/fBlOKv3xGqjdAnSyXXD6/wd0K_zVCd.js
+// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/IxiGPfTHelOHu5CxOeqD/wd0K_zVCd.js
 var HamburgerMenuFonts = getFonts(HamburgerMenu);
 var SingleToggleFonts = getFonts(stdin_default);
 var PhosphorFonts = getFonts(Icon);
 var WalkingLogoFonts = getFonts(WalkingLogo);
 var cycleOrder = ["yAsXs05P9", "Lpvjxo4WY", "yNyxDXetS", "e064VnT8Y"];
-var serializationHash = "framer-CLcge";
+var serializationHash = "framer-1SsqJ";
 var variantClassNames = {
 	e064VnT8Y: "framer-v-1j5tfz4",
 	Lpvjxo4WY: "framer-v-18oqvn8",
@@ -1172,7 +1172,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														y:
 															(componentViewport?.y || 0) +
 															(4 +
-																((componentViewport?.height || 200) - 8 - 32) /
+																((componentViewport?.height || 40) - 8 - 32) /
 																	2) +
 															0 +
 															0,
@@ -1328,10 +1328,59 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										>
 											<Link
 												href={{
-													webPageId: "TmTuoGYHE",
+													webPageId: "Iv9dQrpBz",
 												}}
 												motionChild={true}
 												nodeId={"tpjOvirUm"}
+												openInNewTab={false}
+												relValues={[]}
+												scopeId={"wd0K_zVCd"}
+												smoothScroll={false}
+											>
+												<motion.a
+													className={"framer-styles-preset-9s0pee"}
+													data-styles-preset={"kgVCYNaMl"}
+												>
+													{"home"}
+												</motion.a>
+											</Link>
+										</motion.p>
+									</React.Fragment>
+								</RichText>
+								<RichText
+									__fromCanvasComponent={true}
+									className={"framer-1mv6t2z"}
+									fonts={["GF;Geist Mono-regular"]}
+									layoutDependency={layoutDependency}
+									layoutId={"mEjuAubDP"}
+									style={{
+										"--extracted-r6o4lv":
+											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+									}}
+									verticalAlignment={"top"}
+									withExternalLayout={true}
+								>
+									<React.Fragment>
+										<motion.p
+											dir={"auto"}
+											style={{
+												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+												"--framer-font-family": '"Geist Mono", monospace',
+												"--framer-font-open-type-features":
+													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+												"--framer-font-size": "12px",
+												"--framer-line-height": "1.4em",
+												"--framer-text-color":
+													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+												"--framer-text-transform": "uppercase",
+											}}
+										>
+											<Link
+												href={{
+													webPageId: "TmTuoGYHE",
+												}}
+												motionChild={true}
+												nodeId={"mEjuAubDP"}
 												openInNewTab={false}
 												relValues={[]}
 												scopeId={"wd0K_zVCd"}
@@ -1437,12 +1486,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 									layoutDependency={layoutDependency}
 									layoutId={"iTgaoWuX2"}
 									style={{
-										"--extracted-1w3ko1f":
+										"--extracted-hl0iuy":
 											"var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37))",
 										"--extracted-r6o4lv":
 											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
 									}}
 									verticalAlignment={"top"}
 									withExternalLayout={true}
@@ -1462,15 +1509,33 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-text-transform": "uppercase",
 											}}
 										>
-											{"LOVE "}
-											<motion.span
-												style={{
-													"--framer-text-color":
-														"var(--extracted-1w3ko1f, var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37)))",
+											<Link
+												href={{
+													webPageId: "qWbew6KYe",
 												}}
+												motionChild={true}
+												nodeId={"iTgaoWuX2"}
+												openInNewTab={false}
+												relValues={[]}
+												scopeId={"wd0K_zVCd"}
+												smoothScroll={false}
 											>
-												{"\u2665\uFE0E"}
-											</motion.span>
+												<motion.a
+													className={"framer-styles-preset-9s0pee"}
+													data-styles-preset={"kgVCYNaMl"}
+												>
+													<motion.span
+														style={{
+															"--framer-letter-spacing": "0.2em",
+															"--framer-text-color":
+																"var(--extracted-hl0iuy, var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37)))",
+														}}
+													>
+														{"\u2665\uFE0E"}
+													</motion.span>
+													{"Applause"}
+												</motion.a>
+											</Link>
 										</motion.p>
 									</React.Fragment>
 								</RichText>
@@ -1505,40 +1570,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											}}
 										>
 											{"BLOGS"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1gurq2e"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"g0Z4oElKz"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											{"SHOP"}
 										</motion.p>
 									</React.Fragment>
 								</RichText>
@@ -1586,51 +1617,52 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 });
 var css3 = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-CLcge.framer-j5sbwh, .framer-CLcge .framer-j5sbwh { display: block; }",
-	".framer-CLcge.framer-4xtrq1 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: var(--overflow-clip-fallback, clip); padding: 4px 40px 4px 40px; position: relative; width: 1200px; }",
-	".framer-CLcge .framer-1ygq4iv, .framer-CLcge .framer-13qcvq5 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-pct3t2 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-1txqsft { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 24px; }",
-	".framer-CLcge .framer-10mujyt { flex: none; height: 24px; overflow: var(--overflow-clip-fallback, clip); position: relative; width: 20px; }",
-	".framer-CLcge .framer-1cccj0e { height: 23px; left: 0px; position: absolute; top: 1px; width: 18px; }",
-	".framer-CLcge .framer-1xwh9oe { height: 23px; left: 3px; position: absolute; top: 1px; width: 18px; }",
-	".framer-CLcge .framer-1mf7rop, .framer-CLcge .framer-12t7x9x, .framer-CLcge .framer-10u7yvm, .framer-CLcge .framer-5fqpxc, .framer-CLcge .framer-1x4djic, .framer-CLcge .framer-57luwi, .framer-CLcge .framer-yox8xb, .framer-CLcge .framer-1odct2, .framer-CLcge .framer-mrste, .framer-CLcge .framer-d7w4p7, .framer-CLcge .framer-spnwv9, .framer-CLcge .framer-asp4we, .framer-CLcge .framer-utpxhr, .framer-CLcge .framer-ujrqjf, .framer-CLcge .framer-178td1, .framer-CLcge .framer-1327eng, .framer-CLcge .framer-1ogrfv2, .framer-CLcge .framer-1gurq2e, .framer-CLcge .framer-9car33 { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-CLcge .framer-jyefr7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 40px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-1ylcr8t { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-rxa2rj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-vq6vp3-container, .framer-CLcge .framer-fgyfph-container { flex: none; height: auto; position: relative; width: auto; }",
-	".framer-CLcge .framer-1fwrtlq-container { flex: none; height: auto; position: relative; width: auto; z-index: 1; }",
-	".framer-CLcge .framer-1z5tib, .framer-CLcge .framer-971gxk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 32px; }",
-	".framer-CLcge .framer-9a83wi-container, .framer-CLcge .framer-1e7omgd-container, .framer-CLcge .framer-1o0qe7-container, .framer-CLcge .framer-pwcnh9-container { flex: none; height: 18px; position: relative; width: 18px; }",
-	".framer-CLcge .framer-1fqtnpj, .framer-CLcge .framer-1lv3nvq { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; text-decoration: none; width: 32px; }",
-	".framer-CLcge .framer-1o0bbxt, .framer-CLcge .framer-17ou6yk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-1s2nce2 { flex: none; height: 24px; overflow: visible; position: relative; width: 52px; }",
-	".framer-CLcge .framer-1cr02vt-container { flex: none; height: auto; left: -1px; position: absolute; top: -23px; width: auto; }",
-	".framer-CLcge .framer-jba4od { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; min-height: 200px; min-width: 654px; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-CLcge .framer-au5lya { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 6px; height: 32px; justify-content: flex-end; overflow: visible; padding: 0px; position: relative; width: 112px; }",
-	".framer-CLcge .framer-1gapiw7-container { flex: none; height: 32px; position: relative; width: 32px; z-index: 1; }",
-	".framer-CLcge.framer-v-18oqvn8.framer-4xtrq1 { overflow: visible; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-1ylcr8t { gap: 20px; order: 5; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-rxa2rj { flex-direction: row; gap: 56px; order: 0; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-13qcvq5 { gap: 6px; height: 32px; justify-content: flex-end; order: 2; width: 112px; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-1fwrtlq-container { height: 32px; order: 2; width: 32px; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-1z5tib, .framer-CLcge.framer-v-6grjhl .framer-1o0bbxt, .framer-CLcge.framer-v-6grjhl .framer-au5lya, .framer-CLcge.framer-v-6grjhl .framer-971gxk, .framer-CLcge.framer-v-1j5tfz4 .framer-au5lya, .framer-CLcge.framer-v-1j5tfz4 .framer-971gxk { order: 0; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-1fqtnpj, .framer-CLcge.framer-v-6grjhl .framer-fgyfph-container, .framer-CLcge.framer-v-6grjhl .framer-1lv3nvq, .framer-CLcge.framer-v-1j5tfz4 .framer-fgyfph-container, .framer-CLcge.framer-v-1j5tfz4 .framer-1lv3nvq { order: 1; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-1s2nce2 { order: 0; text-decoration: none; width: 112px; }",
-	".framer-CLcge.framer-v-18oqvn8 .framer-17ou6yk { order: 4; }",
-	".framer-CLcge.framer-v-6grjhl.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 810px; }",
-	".framer-CLcge.framer-v-6grjhl .framer-1ylcr8t, .framer-CLcge.framer-v-1j5tfz4 .framer-1ylcr8t { flex: 1 0 0px; gap: 20px; order: 4; width: 1px; }",
-	".framer-CLcge.framer-v-6grjhl .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; order: 0; width: 1px; }",
-	".framer-CLcge.framer-v-6grjhl .framer-1s2nce2, .framer-CLcge.framer-v-1j5tfz4 .framer-1s2nce2 { order: 0; width: 150px; }",
-	".framer-CLcge.framer-v-6grjhl .framer-jba4od, .framer-CLcge.framer-v-1j5tfz4 .framer-jba4od { height: 32px; min-height: unset; min-width: unset; order: 5; width: 150px; }",
-	".framer-CLcge.framer-v-6grjhl .framer-1gapiw7-container, .framer-CLcge.framer-v-1j5tfz4 .framer-1gapiw7-container { order: 2; }",
-	".framer-CLcge.framer-v-1j5tfz4.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 390px; }",
-	".framer-CLcge.framer-v-1j5tfz4 .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; min-height: 40px; order: 0; width: 1px; }",
+	".framer-1SsqJ.framer-j5sbwh, .framer-1SsqJ .framer-j5sbwh { display: block; }",
+	".framer-1SsqJ.framer-4xtrq1 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: var(--overflow-clip-fallback, clip); padding: 4px 40px 4px 40px; position: relative; width: 1200px; }",
+	".framer-1SsqJ .framer-1ygq4iv, .framer-1SsqJ .framer-13qcvq5 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-pct3t2 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-1txqsft { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 24px; }",
+	".framer-1SsqJ .framer-10mujyt { flex: none; height: 24px; overflow: var(--overflow-clip-fallback, clip); position: relative; width: 20px; }",
+	".framer-1SsqJ .framer-1cccj0e { height: 23px; left: 0px; position: absolute; top: 1px; width: 18px; }",
+	".framer-1SsqJ .framer-1xwh9oe { height: 23px; left: 3px; position: absolute; top: 1px; width: 18px; }",
+	".framer-1SsqJ .framer-1mf7rop, .framer-1SsqJ .framer-12t7x9x, .framer-1SsqJ .framer-10u7yvm, .framer-1SsqJ .framer-5fqpxc, .framer-1SsqJ .framer-1x4djic, .framer-1SsqJ .framer-57luwi, .framer-1SsqJ .framer-yox8xb, .framer-1SsqJ .framer-1odct2, .framer-1SsqJ .framer-mrste, .framer-1SsqJ .framer-d7w4p7, .framer-1SsqJ .framer-spnwv9, .framer-1SsqJ .framer-asp4we, .framer-1SsqJ .framer-utpxhr, .framer-1SsqJ .framer-1mv6t2z, .framer-1SsqJ .framer-ujrqjf, .framer-1SsqJ .framer-178td1, .framer-1SsqJ .framer-1327eng, .framer-1SsqJ .framer-1ogrfv2, .framer-1SsqJ .framer-9car33 { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+	".framer-1SsqJ .framer-jyefr7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 40px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-1ylcr8t { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-rxa2rj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-vq6vp3-container, .framer-1SsqJ .framer-fgyfph-container { flex: none; height: auto; position: relative; width: auto; }",
+	".framer-1SsqJ .framer-1fwrtlq-container { flex: none; height: auto; position: relative; width: auto; z-index: 1; }",
+	".framer-1SsqJ .framer-1z5tib, .framer-1SsqJ .framer-971gxk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 32px; }",
+	".framer-1SsqJ .framer-9a83wi-container, .framer-1SsqJ .framer-1e7omgd-container, .framer-1SsqJ .framer-1o0qe7-container, .framer-1SsqJ .framer-pwcnh9-container { flex: none; height: 18px; position: relative; width: 18px; }",
+	".framer-1SsqJ .framer-1fqtnpj, .framer-1SsqJ .framer-1lv3nvq { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; text-decoration: none; width: 32px; }",
+	".framer-1SsqJ .framer-1o0bbxt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-1s2nce2 { flex: none; height: 24px; overflow: visible; position: relative; width: 52px; }",
+	".framer-1SsqJ .framer-1cr02vt-container { flex: none; height: auto; left: -1px; position: absolute; top: -23px; width: auto; }",
+	".framer-1SsqJ .framer-jba4od { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; min-height: 200px; min-width: 654px; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ .framer-au5lya { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 6px; height: 32px; justify-content: flex-end; overflow: visible; padding: 0px; position: relative; width: 112px; }",
+	".framer-1SsqJ .framer-1gapiw7-container { flex: none; height: 32px; position: relative; width: 32px; z-index: 1; }",
+	".framer-1SsqJ .framer-17ou6yk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 24px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-1SsqJ.framer-v-18oqvn8.framer-4xtrq1 { overflow: visible; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-1ylcr8t { gap: 20px; order: 5; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-rxa2rj { flex-direction: row; gap: 56px; order: 0; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-13qcvq5 { gap: 6px; height: 32px; justify-content: flex-end; order: 2; width: 112px; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-1fwrtlq-container { height: 32px; order: 2; width: 32px; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-1z5tib, .framer-1SsqJ.framer-v-6grjhl .framer-1o0bbxt, .framer-1SsqJ.framer-v-6grjhl .framer-au5lya, .framer-1SsqJ.framer-v-6grjhl .framer-971gxk, .framer-1SsqJ.framer-v-1j5tfz4 .framer-au5lya, .framer-1SsqJ.framer-v-1j5tfz4 .framer-971gxk { order: 0; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-1fqtnpj, .framer-1SsqJ.framer-v-6grjhl .framer-fgyfph-container, .framer-1SsqJ.framer-v-6grjhl .framer-1lv3nvq, .framer-1SsqJ.framer-v-1j5tfz4 .framer-fgyfph-container, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1lv3nvq { order: 1; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-1s2nce2 { order: 0; text-decoration: none; width: 112px; }",
+	".framer-1SsqJ.framer-v-18oqvn8 .framer-17ou6yk { order: 4; }",
+	".framer-1SsqJ.framer-v-6grjhl.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 810px; }",
+	".framer-1SsqJ.framer-v-6grjhl .framer-1ylcr8t, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1ylcr8t { flex: 1 0 0px; gap: 20px; order: 4; width: 1px; }",
+	".framer-1SsqJ.framer-v-6grjhl .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; order: 0; width: 1px; }",
+	".framer-1SsqJ.framer-v-6grjhl .framer-1s2nce2, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1s2nce2 { order: 0; width: 150px; }",
+	".framer-1SsqJ.framer-v-6grjhl .framer-jba4od, .framer-1SsqJ.framer-v-1j5tfz4 .framer-jba4od { height: 32px; min-height: unset; min-width: unset; order: 5; width: 150px; }",
+	".framer-1SsqJ.framer-v-6grjhl .framer-1gapiw7-container, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1gapiw7-container { order: 2; }",
+	".framer-1SsqJ.framer-v-1j5tfz4.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 390px; }",
+	".framer-1SsqJ.framer-v-1j5tfz4 .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; min-height: 40px; order: 0; width: 1px; }",
 	...css,
 	...css2,
-	'.framer-CLcge[data-border="true"]::after, .framer-CLcge [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
+	'.framer-1SsqJ[data-border="true"]::after, .framer-1SsqJ [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
 ];
-var Framerwd0K_zVCd = withCSS(Component, css3, "framer-CLcge");
+var Framerwd0K_zVCd = withCSS(Component, css3, "framer-1SsqJ");
 var stdin_default2 = Framerwd0K_zVCd;
 Framerwd0K_zVCd.displayName = "Top Global Navbar";
 Framerwd0K_zVCd.defaultProps = {

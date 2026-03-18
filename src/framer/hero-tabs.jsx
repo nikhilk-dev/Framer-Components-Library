@@ -34,7 +34,7 @@ import { routes } from "./chunks/chunk-2F3PHDTH.js";
 import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/KqtffnJ7ahWtDGB4VK4G/zPOjMAf8AqNTZqKMtBJT/rL1b3ztA9.js
+// /:https://framerusercontent.com/modules/KqtffnJ7ahWtDGB4VK4G/PMLt2Pkgs9okZI7bZMiP/rL1b3ztA9.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
 	addFonts,
@@ -112,7 +112,7 @@ var css = [
 ];
 var className = "framer-UHrxD";
 
-// /:https://framerusercontent.com/modules/KqtffnJ7ahWtDGB4VK4G/zPOjMAf8AqNTZqKMtBJT/rL1b3ztA9.js
+// /:https://framerusercontent.com/modules/KqtffnJ7ahWtDGB4VK4G/PMLt2Pkgs9okZI7bZMiP/rL1b3ztA9.js
 var HeroIntroButtonFonts = getFonts(stdin_default);
 var cycleOrder = [
 	"b05VwCQz7",
@@ -122,7 +122,7 @@ var cycleOrder = [
 	"YOUln6dlw",
 	"GgtqxzktU",
 ];
-var serializationHash = "framer-gvPgR";
+var serializationHash = "framer-NsS5G";
 var variantClassNames = {
 	b05VwCQz7: "framer-v-5048f8",
 	GgtqxzktU: "framer-v-lay4u7",
@@ -293,9 +293,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-lodqrp-container"}
@@ -357,9 +390,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-93uojw-container"}
@@ -405,9 +471,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-1a3o89q-container"}
@@ -453,9 +552,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-3bpbdv-container"}
@@ -501,9 +633,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-4u7kkd-container"}
@@ -549,9 +714,42 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								y={
 									(componentViewport?.y || 0) +
 									0 +
-									(((componentViewport?.height || 200) - 0 - 140) / 2 + 0 + 0) +
+									(((componentViewport?.height || 316) - 0 - 140) / 2 + 0 + 0) +
 									0
 								}
+								{...addPropertyOverrides(
+									{
+										phhv55jEJ: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										UUEJAZ0PX: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+										vILQExAxN: {
+											y:
+												(componentViewport?.y || 0) +
+												0 +
+												(((componentViewport?.height || 228) - 0 - 140) / 2 +
+													0 +
+													0) +
+												0,
+										},
+									},
+									baseVariant,
+									gestureVariant,
+								)}
 							>
 								<SmartComponentScopedContainer
 									className={"framer-s4rcwv-container"}
@@ -702,19 +900,19 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 });
 var css2 = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-gvPgR.framer-ojzq3i, .framer-gvPgR .framer-ojzq3i { display: block; }",
-	".framer-gvPgR.framer-5048f8 { align-content: flex-start; align-items: flex-start; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 30px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 1152px; }",
-	".framer-gvPgR .framer-13rz5i1 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: auto; padding: 0px; position: relative; width: 100%; }",
-	".framer-gvPgR .framer-lodqrp-container { flex: none; height: 22px; position: relative; width: 83px; }",
-	".framer-gvPgR .framer-93uojw-container { flex: none; height: 22px; position: relative; width: 125px; }",
-	".framer-gvPgR .framer-1a3o89q-container { flex: none; height: 22px; position: relative; width: 76px; }",
-	".framer-gvPgR .framer-3bpbdv-container { flex: none; height: 22px; position: relative; width: 131px; }",
-	".framer-gvPgR .framer-4u7kkd-container { flex: none; height: 22px; position: relative; width: 75px; }",
-	".framer-gvPgR .framer-s4rcwv-container { flex: none; height: 22px; position: relative; width: 148px; }",
-	".framer-gvPgR .framer-1x1scfu { flex: none; height: auto; max-width: 100%; position: relative; white-space: pre-wrap; width: auto; word-break: break-word; word-wrap: break-word; }",
+	".framer-NsS5G.framer-ojzq3i, .framer-NsS5G .framer-ojzq3i { display: block; }",
+	".framer-NsS5G.framer-5048f8 { align-content: flex-start; align-items: flex-start; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 30px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 1152px; }",
+	".framer-NsS5G .framer-13rz5i1 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: auto; padding: 0px; position: relative; width: 100%; }",
+	".framer-NsS5G .framer-lodqrp-container { flex: none; height: 22px; position: relative; width: 83px; }",
+	".framer-NsS5G .framer-93uojw-container { flex: none; height: 22px; position: relative; width: 125px; }",
+	".framer-NsS5G .framer-1a3o89q-container { flex: none; height: 22px; position: relative; width: 76px; }",
+	".framer-NsS5G .framer-3bpbdv-container { flex: none; height: 22px; position: relative; width: 131px; }",
+	".framer-NsS5G .framer-4u7kkd-container { flex: none; height: 22px; position: relative; width: 75px; }",
+	".framer-NsS5G .framer-s4rcwv-container { flex: none; height: 22px; position: relative; width: 148px; }",
+	".framer-NsS5G .framer-1x1scfu { flex: none; height: auto; max-width: 100%; position: relative; white-space: pre-wrap; width: auto; word-break: break-word; word-wrap: break-word; }",
 	...css,
 ];
-var FramerrL1b3ztA9 = withCSS(Component, css2, "framer-gvPgR");
+var FramerrL1b3ztA9 = withCSS(Component, css2, "framer-NsS5G");
 var stdin_default2 = FramerrL1b3ztA9;
 FramerrL1b3ztA9.displayName = "Hero Tabs";
 FramerrL1b3ztA9.defaultProps = {
