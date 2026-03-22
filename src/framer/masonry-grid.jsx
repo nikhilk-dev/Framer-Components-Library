@@ -19,8 +19,11 @@
  * width?: any
  * height?: any
  * layoutId?: string
+ * showFilters?: boolean // Show Filters
+ * enablePanning?: boolean // Enable Panning
+ * panningSpeed?: number // Panning Speed
  * items?: {image: {src: string, srcSet?: string, alt?: string}, images: {src: string, srcSet?: string, alt?: string}[], height: number, category: string, domain: string, title: string, subtitle: string, tag: string, year: string, description: string, link: string[] // Items
- * layout?: {layoutMode: 'Masonry' | 'Even Grid' | 'Mosaic', columns: number, gap: number, padding: number, backgroundColor: string // Layout
+ * layout?: {layoutMode: 'Masonry' | 'Even Grid' | 'Mosaic' | 'Bento' | 'Pinterest' | 'Justified', columns: number, gap: number, padding: number, backgroundColor: string // Layout
  * card?: {borderRadius: number, aspectRatio: 'Auto' | 'Square' | '4:3' | '3:4' | '16:9' | '9:16', imageFit: 'Cover' | 'Contain' | 'Fill', hoverScale: number, showShadow: boolean, shadow: string, hoverShadow: string, imageHoverScale: number // Card
  * overlay?: {show: boolean, color: string, opacity: number, hoverOpacity: number // Overlay
  * cardInfo?: {show: boolean, position: 'Bottom' | 'Top' | 'Overlay on Hover', paddingHorizontal: number, paddingVertical: number, showGradient: boolean, gradientColor: string, gradientOpacity: number, gradientHeight: number, gradientDirection: 'Bottom to Top' | 'Top to Bottom', background: string, textColor: string, font: undefined // Card Info
@@ -39,7 +42,7 @@ import { routes } from "./chunks/chunk-2F3PHDTH.js";
 import { Fragment } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/6E5xwB4EzWkfVIUS5Q2a/Kv55PzIHYz737vQnVdL9/MasonryGrid.js
+// /:https://framerusercontent.com/modules/6E5xwB4EzWkfVIUS5Q2a/khS0Mg9ZPEKncDyjU375/MasonryGrid.js
 import {
 	jsx as _jsx,
 	jsxs as _jsxs,
@@ -475,6 +478,7 @@ function SegmentedControl({
 function MasonryGrid(props) {
 	const {
 		items = SAMPLE_ITEMS,
+		showFilters: showFiltersGlobal = true,
 		layout = DEFAULT_LAYOUT,
 		card = DEFAULT_CARD,
 		overlay = DEFAULT_OVERLAY,
@@ -485,6 +489,8 @@ function MasonryGrid(props) {
 		filterLayout = DEFAULT_FILTER_LAYOUT,
 		animation = DEFAULT_ANIMATION,
 		popover = DEFAULT_POPOVER,
+		enablePanning = false,
+		panningSpeed = 1,
 	} = props;
 	const { layoutMode, columns, gap, padding, backgroundColor } = {
 		...DEFAULT_LAYOUT,
@@ -663,6 +669,16 @@ function MasonryGrid(props) {
 	const [selectedItem, setSelectedItem] = useState(null);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 	const cardRefs = useRef(/* @__PURE__ */ new Map());
+	const [isPanning, setIsPanning] = useState(false);
+	const [panOffset, setPanOffset] = useState({
+		x: 0,
+		y: 0,
+	});
+	const [startPanPosition, setStartPanPosition] = useState({
+		x: 0,
+		y: 0,
+	});
+	const containerRef = useRef(null);
 	const allFilters = useMemo(() => ["All", ...filterOptions], [filterOptions]);
 	const allDomainFilters = useMemo(
 		() => ["All", ...domainOptions],
@@ -769,6 +785,41 @@ function MasonryGrid(props) {
 		flexShrink: 0,
 		boxShadow: showShadow ? (hovered ? hoverShadow : shadow) : "none",
 	});
+	const handleMouseDown = useCallback(
+		(e) => {
+			if (!enablePanning) return;
+			setIsPanning(true);
+			setStartPanPosition({
+				x: e.clientX - panOffset.x,
+				y: e.clientY - panOffset.y,
+			});
+		},
+		[enablePanning, panOffset],
+	);
+	const handleMouseMove = useCallback(
+		(e) => {
+			if (!isPanning || !enablePanning) return;
+			const newX = (e.clientX - startPanPosition.x) * panningSpeed;
+			const newY = (e.clientY - startPanPosition.y) * panningSpeed;
+			setPanOffset({
+				x: newX,
+				y: newY,
+			});
+		},
+		[isPanning, enablePanning, startPanPosition, panningSpeed],
+	);
+	const handleMouseUp = useCallback(() => {
+		setIsPanning(false);
+	}, []);
+	useEffect(() => {
+		if (!enablePanning) return;
+		__unframerWindow.addEventListener("mousemove", handleMouseMove);
+		__unframerWindow.addEventListener("mouseup", handleMouseUp);
+		return () => {
+			__unframerWindow.removeEventListener("mousemove", handleMouseMove);
+			__unframerWindow.removeEventListener("mouseup", handleMouseUp);
+		};
+	}, [enablePanning, handleMouseMove, handleMouseUp]);
 	const renderOverlay = (hovered) => (
 		<div
 			style={{
@@ -1371,6 +1422,7 @@ function MasonryGrid(props) {
 		);
 	};
 	const renderFilterBar = () => {
+		if (!showFiltersGlobal) return null;
 		if (!showFilters && !showDomainFilter) return null;
 		const cat = renderCategoryFilter();
 		const domain = renderDomainDropdown();
@@ -1882,10 +1934,12 @@ function MasonryGrid(props) {
 	};
 	return (
 		<div
+			ref={containerRef}
 			onClick={() => {
 				if (isCatDropdownOpen) setIsCatDropdownOpen(false);
 				if (isDomainDropdownOpen) setIsDomainDropdownOpen(false);
 			}}
+			onMouseDown={handleMouseDown}
 			style={{
 				width: "100%",
 				height: "100%",
@@ -1896,53 +1950,151 @@ function MasonryGrid(props) {
 				boxSizing: "border-box",
 				scrollbarWidth: "none",
 				msOverflowStyle: "none",
+				cursor: enablePanning ? (isPanning ? "grabbing" : "grab") : "default",
+				overflow: "hidden",
+				position: "relative",
 			}}
 		>
 			<style>{`div::-webkit-scrollbar { display: none }`}</style>
 			{renderFilterBar()}
-			{layoutMode === "mosaic" ? (
-				<div
-					style={{
-						display: "grid",
-						gridTemplateColumns: `repeat(${columns}, 1fr)`,
-						gridAutoRows: "40px",
-						gap,
-						flex: 1,
-					}}
-				>
-					{filteredItems.map((item, i) => renderMosaicCard(item, i))}
-				</div>
-			) : (
-				<div
-					style={{
-						display: "flex",
-						gap,
-						alignItems: "flex-start",
-						flex: 1,
-					}}
-				>
-					{columnArrays.map((col, ci) => (
-						<div
-							style={{
-								flex: 1,
-								display: "flex",
-								flexDirection: "column",
-								gap,
-								minWidth: 0,
-							}}
-						>
-							{col.map(({ item, origIndex }, ri) =>
-								renderCard(item, ci, ri, origIndex),
-							)}
-						</div>
-					))}
-				</div>
-			)}
+			<div
+				style={{
+					transform: enablePanning
+						? `translate(${panOffset.x}px, ${panOffset.y}px)`
+						: "none",
+					transition: isPanning ? "none" : "transform 0.3s ease-out",
+					flex: 1,
+					display: "flex",
+					flexDirection: "column",
+				}}
+			>
+				{layoutMode === "mosaic" || layoutMode === "bento" ? (
+					<div
+						style={{
+							display: "grid",
+							gridTemplateColumns: `repeat(${columns}, 1fr)`,
+							gridAutoRows: layoutMode === "bento" ? "80px" : "40px",
+							gap,
+							flex: 1,
+						}}
+					>
+						{filteredItems.map((item, i) => renderMosaicCard(item, i))}
+					</div>
+				) : layoutMode === "justified" ? (
+					<div
+						style={{
+							display: "flex",
+							flexWrap: "wrap",
+							gap,
+							flex: 1,
+							alignItems: "flex-start",
+						}}
+					>
+						{filteredItems.map((item, i) => {
+							const visible = visibleItems.has(i);
+							const hovered = hoveredCard === i;
+							const aspectRatioValue = item.height / 300;
+							return (
+								<div
+									ref={(el) => {
+										if (el) cardRefs.current.set(i, el);
+										else cardRefs.current.delete(i);
+									}}
+									data-card-index={i}
+									style={{
+										...sharedCardStyle(hovered, visible),
+										flex: `${aspectRatioValue} 1 ${200 * aspectRatioValue}px`,
+										height: 250,
+									}}
+									onMouseEnter={() => setHoveredCard(i)}
+									onMouseLeave={() => setHoveredCard(null)}
+									onClick={(e) => {
+										if (enablePopover) {
+											e.stopPropagation();
+											setSelectedItem(item);
+											setCurrentImageIndex(0);
+										}
+									}}
+								>
+									<img
+										src={item.image?.src}
+										alt={item.image?.alt || ""}
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: imageFit,
+											display: "block",
+											transform: hovered
+												? `scale(${imageHoverScale})`
+												: "scale(1)",
+											transition: `transform ${duration * 1.2}ms ${entranceEasing}`,
+										}}
+										loading={"lazy"}
+									/>
+									{renderOverlay(hovered)}
+									{item.tag && renderTag(item.tag)}
+									{renderCardInfo(item, hovered)}
+								</div>
+							);
+						})}
+					</div>
+				) : (
+					<div
+						style={{
+							display: "flex",
+							gap,
+							alignItems: "flex-start",
+							flex: 1,
+						}}
+					>
+						{columnArrays.map((col, ci) => (
+							<div
+								style={{
+									flex: 1,
+									display: "flex",
+									flexDirection: "column",
+									gap,
+									minWidth: 0,
+								}}
+							>
+								{col.map(({ item, origIndex }, ri) =>
+									renderCard(item, ci, ri, origIndex),
+								)}
+							</div>
+						))}
+					</div>
+				)}
+			</div>
 			{enablePopover && renderPopover()}
 		</div>
 	);
 }
 addPropertyControls(MasonryGrid, {
+	// ── Show Filters Toggle ───────────────────────────────────────────────────
+	showFilters: {
+		type: ControlType.Boolean,
+		title: "Show Filters",
+		defaultValue: true,
+		enabledTitle: "Show",
+		disabledTitle: "Hide",
+	},
+	// ── Panning Controls ──────────────────────────────────────────────────────
+	enablePanning: {
+		type: ControlType.Boolean,
+		title: "Enable Panning",
+		defaultValue: false,
+		enabledTitle: "On",
+		disabledTitle: "Off",
+	},
+	panningSpeed: {
+		type: ControlType.Number,
+		title: "Panning Speed",
+		defaultValue: 1,
+		min: 0.1,
+		max: 3,
+		step: 0.1,
+		hidden: ({ enablePanning }) => !enablePanning,
+	},
 	// ── Items ─────────────────────────────────────────────────────────────────
 	items: {
 		type: ControlType.Array,
@@ -2025,10 +2177,24 @@ addPropertyControls(MasonryGrid, {
 			layoutMode: {
 				type: ControlType.Enum,
 				title: "Mode",
-				options: ["masonry", "even-grid", "mosaic"],
-				optionTitles: ["Masonry", "Even Grid", "Mosaic"],
+				options: [
+					"masonry",
+					"even-grid",
+					"mosaic",
+					"bento",
+					"pinterest",
+					"justified",
+				],
+				optionTitles: [
+					"Masonry",
+					"Even Grid",
+					"Mosaic",
+					"Bento",
+					"Pinterest",
+					"Justified",
+				],
 				defaultValue: "masonry",
-				displaySegmentedControl: true,
+				displaySegmentedControl: false,
 			},
 			columns: {
 				type: ControlType.Number,

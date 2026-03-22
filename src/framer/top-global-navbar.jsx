@@ -40,7 +40,7 @@ import { routes } from "./chunks/chunk-2F3PHDTH.js";
 import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/IxiGPfTHelOHu5CxOeqD/wd0K_zVCd.js
+// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/4KEpQvxIA0K0wRzrNw46/wd0K_zVCd.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
 	addFonts,
@@ -79,13 +79,13 @@ var css2 = [
 ];
 var className2 = "framer-0GSex";
 
-// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/IxiGPfTHelOHu5CxOeqD/wd0K_zVCd.js
+// /:https://framerusercontent.com/modules/VV17Lc5DUWbFNtNUHWB5/4KEpQvxIA0K0wRzrNw46/wd0K_zVCd.js
+var WalkingLogoFonts = getFonts(WalkingLogo);
 var HamburgerMenuFonts = getFonts(HamburgerMenu);
 var SingleToggleFonts = getFonts(stdin_default);
 var PhosphorFonts = getFonts(Icon);
-var WalkingLogoFonts = getFonts(WalkingLogo);
 var cycleOrder = ["yAsXs05P9", "Lpvjxo4WY", "yNyxDXetS", "e064VnT8Y"];
-var serializationHash = "framer-1SsqJ";
+var serializationHash = "framer-I4CG8";
 var variantClassNames = {
 	e064VnT8Y: "framer-v-1j5tfz4",
 	Lpvjxo4WY: "framer-v-18oqvn8",
@@ -180,40 +180,40 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 	const EMezYwezr1jd5r4u = activeVariantCallback(async (...args) => {
 		setVariant("Lpvjxo4WY");
 	});
-	const sharedStyleClassNames = [className, className2];
+	const sharedStyleClassNames = [className2, className];
 	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
 	const isDisplayed = () => {
-		if (["Lpvjxo4WY", "yNyxDXetS", "e064VnT8Y"].includes(baseVariant))
-			return false;
-		return true;
-	};
-	const isDisplayed1 = () => {
-		if (["yNyxDXetS", "e064VnT8Y"].includes(baseVariant)) return false;
-		return true;
-	};
-	const isDisplayed2 = (value) => {
-		if (baseVariant === "Lpvjxo4WY") return value;
-		return false;
-	};
-	const isDisplayed3 = () => {
-		if (baseVariant === "yNyxDXetS") return true;
-		return false;
-	};
-	const isDisplayed4 = () => {
-		if (baseVariant === "yNyxDXetS") return false;
-		return true;
-	};
-	const isDisplayed5 = () => {
 		if (["Lpvjxo4WY", "yNyxDXetS", "e064VnT8Y"].includes(baseVariant))
 			return true;
 		return false;
 	};
-	const isDisplayed6 = () => {
-		if (["yNyxDXetS", "e064VnT8Y"].includes(baseVariant)) return true;
+	const isDisplayed1 = () => {
+		if (baseVariant === "Lpvjxo4WY") return true;
 		return false;
 	};
+	const isDisplayed2 = () => {
+		if (["Lpvjxo4WY", "yNyxDXetS", "e064VnT8Y"].includes(baseVariant))
+			return false;
+		return true;
+	};
+	const isDisplayed3 = () => {
+		if (["yNyxDXetS", "e064VnT8Y"].includes(baseVariant)) return false;
+		return true;
+	};
+	const isDisplayed4 = (value) => {
+		if (baseVariant === "Lpvjxo4WY") return value;
+		return false;
+	};
+	const isDisplayed5 = () => {
+		if (baseVariant === "yNyxDXetS") return true;
+		return false;
+	};
+	const isDisplayed6 = () => {
+		if (baseVariant === "yNyxDXetS") return false;
+		return true;
+	};
 	const isDisplayed7 = () => {
-		if (baseVariant === "Lpvjxo4WY") return true;
+		if (["yNyxDXetS", "e064VnT8Y"].includes(baseVariant)) return true;
 		return false;
 	};
 	return (
@@ -257,12 +257,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								WebkitBackdropFilter: "none",
 							},
 							Lpvjxo4WY: {
-								"--border-color":
-									"var(--token-d5bd3e80-2eeb-4af7-9072-9db27645e7d9, rgb(235, 235, 235))",
-								backdropFilter: "none",
-								backgroundColor:
-									"var(--token-06cbdf7a-4b04-4493-a020-8aa6e2439856, rgb(245, 245, 245))",
-								WebkitBackdropFilter: "none",
+								"--border-bottom-width": "0px",
+								backdropFilter: "blur(10px)",
+								backgroundColor: "rgba(245, 245, 245, 0.01)",
+								WebkitBackdropFilter: "blur(10px)",
 							},
 							yNyxDXetS: {
 								"--border-color":
@@ -289,59 +287,377 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 							gestureVariant,
 						)}
 					>
-						{isDisplayed() && (
-							<motion.div
-								className={"framer-1ygq4iv"}
-								layoutDependency={layoutDependency}
-								layoutId={"z3yzOruPB"}
-							>
-								<motion.div
-									className={"framer-pct3t2"}
-									layoutDependency={layoutDependency}
-									layoutId={"GSjmjkWIS"}
+						<motion.div
+							className={"framer-1joly73"}
+							layoutDependency={layoutDependency}
+							layoutId={"fpUg8LfsG"}
+						>
+							{isDisplayed() && (
+								<Link
+									motionChild={true}
+									nodeId={"tyuUlYwxT"}
+									scopeId={"wd0K_zVCd"}
+									{...addPropertyOverrides(
+										{
+											Lpvjxo4WY: {
+												href: {
+													webPageId: "Iv9dQrpBz",
+												},
+												openInNewTab: false,
+											},
+										},
+										baseVariant,
+										gestureVariant,
+									)}
 								>
-									<motion.div
-										className={"framer-1txqsft"}
-										data-framer-name={"Nix logo"}
+									<motion.a
+										className={"framer-1s2nce2 framer-j5sbwh"}
 										layoutDependency={layoutDependency}
-										layoutId={"wHVbxPq5k"}
+										layoutId={"tyuUlYwxT"}
 									>
-										<motion.div
-											className={"framer-10mujyt"}
-											layoutDependency={layoutDependency}
-											layoutId={"Lm4xOeiOZ"}
-										>
-											<SVG
-												className={"framer-1cccj0e"}
+										<ComponentViewportProvider>
+											<SmartComponentScopedContainer
+												className={"framer-1cr02vt-container"}
+												data-code-component-plugin-id={"84d4c1"}
+												isAuthoredByUser={true}
 												layoutDependency={layoutDependency}
-												layoutId={"rBLeewMb6"}
-												requiresOverflowVisible={false}
-												svg={
-													'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.598 23.035" overflow="visible"><g><defs><linearGradient id="idsrBLeewMb6_1g-513125731" x1="0.9407911342413537" x2="0.0592088657586462" y1="1" y2="0"><stop offset="0" stop-color="rgba(255, 68, 0, 0.2)" stop-opacity="0.2"></stop><stop offset="1" stop-color="rgb(255, 68, 0)" stop-opacity="1"></stop></linearGradient></defs><path d="M 17.498 15.524 C 17.561 15.468 17.598 15.388 17.598 15.304 C 17.598 15.219 17.561 15.139 17.498 15.083 L 0.488 0.074 C 0.298 -0.093 0 0.041 0 0.294 L 0 15.171 C 0 15.255 0.036 15.335 0.099 15.391 L 8.68 22.962 C 8.791 23.06 8.957 23.06 9.068 22.962 L 17.498 15.523 Z" fill="url(#idsrBLeewMb6_1g-513125731)"></path></g></svg>'
-												}
-												withExternalLayout={true}
-											/>
-											<SVG
-												className={"framer-1xwh9oe"}
-												layoutDependency={layoutDependency}
-												layoutId={"G75V741OJ"}
-												requiresOverflowVisible={false}
-												svg={
-													'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.598 23.035" overflow="visible"><g><defs><linearGradient id="idsG75V741OJ_1g513125824" x1="0.05842446658608186" x2="0.9415755334139182" y1="0" y2="1"><stop offset="0" stop-color="rgba(255, 68, 0, 0.2)" stop-opacity="0.2"></stop><stop offset="1" stop-color="rgb(255, 68, 0)" stop-opacity="1"></stop></linearGradient></defs><path d="M 0.099 7.512 C 0.036 7.567 0 7.648 0 7.732 C 0 7.816 0.036 7.896 0.099 7.952 L 17.11 22.961 C 17.299 23.129 17.598 22.994 17.598 22.741 L 17.598 7.864 C 17.598 7.78 17.561 7.7 17.498 7.644 L 8.918 0.073 C 8.807 -0.024 8.641 -0.024 8.53 0.073 Z" fill="url(#idsG75V741OJ_1g513125824)"></path></g></svg>'
-												}
-												withExternalLayout={true}
-											/>
-										</motion.div>
-									</motion.div>
+												layoutId={"Z9rD_5s0B-container"}
+												nodeId={"Z9rD_5s0B"}
+												rendersWithMotion={true}
+												scopeId={"wd0K_zVCd"}
+											>
+												<WalkingLogo
+													animationDuration={5}
+													blinkInterval={3}
+													buttonColor={"rgba(217, 217, 217, 0)"}
+													buttonFont={{
+														fontFamily:
+															'"IBM Plex Sans", "IBM Plex Sans Placeholder", sans-serif',
+														fontSize: "14px",
+														fontStyle: "normal",
+														fontWeight: 400,
+														letterSpacing: "-0.01em",
+														lineHeight: "1em",
+													}}
+													buttonOffsetX={0}
+													buttonOffsetY={-6}
+													buttonPadding={4}
+													buttonText={".what?"}
+													buttonTextColor={
+														"var(--token-df79e38c-c9e1-4fba-9890-9323ccb725c1, rgb(102, 102, 102))"
+													}
+													buttonTextSize={14}
+													enableAnimation={true}
+													enableBlink={true}
+													height={"100%"}
+													hoverMessageFontSize={12}
+													hoverMessages={[
+														{
+															text: ". Hi there \u{1F44B}",
+														},
+														{
+															text: ". We just became friends?",
+														},
+														{
+															text: ". Poke poke \u{1F440}",
+														},
+														{
+															text: ". Oops, you found me",
+														},
+														{
+															text: ". Let\u2019s talk design",
+														},
+														{
+															text: ". Hover hero \u{1F601}",
+														},
+													]}
+													id={"Z9rD_5s0B"}
+													layoutId={"Z9rD_5s0B"}
+													logoColor={
+														"var(--token-99df6449-e9f2-4797-8ee6-4b98273d37fc, rgb(17, 17, 17))"
+													}
+													logoScale={0.35}
+													moveDistance={24}
+													movementDirection={"both"}
+													showBubbleLive={false}
+													width={"100%"}
+												/>
+											</SmartComponentScopedContainer>
+										</ComponentViewportProvider>
+									</motion.a>
+								</Link>
+							)}
+							{isDisplayed1() && (
+								<motion.div
+									className={"framer-17ou6yk"}
+									layoutDependency={layoutDependency}
+									layoutId={"LMdOTkJu9"}
+								>
 									<RichText
 										__fromCanvasComponent={true}
-										className={"framer-1mf7rop"}
-										fonts={["GF;Geist Mono-500"]}
+										className={"framer-utpxhr"}
+										fonts={["GF;Geist Mono-regular"]}
 										layoutDependency={layoutDependency}
-										layoutId={"cbCaMjb7Q"}
+										layoutId={"tpjOvirUm"}
 										style={{
 											"--extracted-r6o4lv":
-												"var(--token-c7046da6-529c-4bf7-84f8-82aca30594c1, rgb(0, 0, 0))",
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												<Link
+													href={{
+														webPageId: "Iv9dQrpBz",
+													}}
+													motionChild={true}
+													nodeId={"tpjOvirUm"}
+													openInNewTab={false}
+													relValues={[]}
+													scopeId={"wd0K_zVCd"}
+													smoothScroll={false}
+												>
+													<motion.a
+														className={"framer-styles-preset-9s0pee"}
+														data-styles-preset={"kgVCYNaMl"}
+													>
+														{"home"}
+													</motion.a>
+												</Link>
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-1mv6t2z"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"mEjuAubDP"}
+										style={{
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												<Link
+													href={{
+														webPageId: "TmTuoGYHE",
+													}}
+													motionChild={true}
+													nodeId={"mEjuAubDP"}
+													openInNewTab={false}
+													relValues={[]}
+													scopeId={"wd0K_zVCd"}
+													smoothScroll={false}
+												>
+													<motion.a
+														className={"framer-styles-preset-9s0pee"}
+														data-styles-preset={"kgVCYNaMl"}
+													>
+														{"WORK"}
+													</motion.a>
+												</Link>
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-ujrqjf"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"jxfSYxXHn"}
+										style={{
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												<Link
+													href={{
+														webPageId: "LUlZD6QvW",
+													}}
+													motionChild={true}
+													nodeId={"jxfSYxXHn"}
+													openInNewTab={false}
+													relValues={[]}
+													scopeId={"wd0K_zVCd"}
+													smoothScroll={false}
+												>
+													<motion.a
+														className={"framer-styles-preset-9s0pee"}
+														data-styles-preset={"kgVCYNaMl"}
+													>
+														{"ABOUT"}
+													</motion.a>
+												</Link>
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-178td1"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"QIl8hnESz"}
+										style={{
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												<Link
+													href={{
+														webPageId: "MQGV8R034",
+													}}
+													motionChild={true}
+													nodeId={"QIl8hnESz"}
+													openInNewTab={false}
+													relValues={[]}
+													scopeId={"wd0K_zVCd"}
+													smoothScroll={false}
+												>
+													<motion.a
+														className={"framer-styles-preset-9s0pee"}
+														data-styles-preset={"kgVCYNaMl"}
+													>
+														{"Playground"}
+													</motion.a>
+												</Link>
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-1327eng"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"iTgaoWuX2"}
+										style={{
+											"--extracted-hl0iuy":
+												"var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37))",
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												<Link
+													href={{
+														webPageId: "qWbew6KYe",
+													}}
+													motionChild={true}
+													nodeId={"iTgaoWuX2"}
+													openInNewTab={false}
+													relValues={[]}
+													scopeId={"wd0K_zVCd"}
+													smoothScroll={false}
+												>
+													<motion.a
+														className={"framer-styles-preset-9s0pee"}
+														data-styles-preset={"kgVCYNaMl"}
+													>
+														<motion.span
+															style={{
+																"--framer-letter-spacing": "0.2em",
+																"--framer-text-color":
+																	"var(--extracted-hl0iuy, var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37)))",
+															}}
+														>
+															{"\u2665\uFE0E"}
+														</motion.span>
+														{"Applause"}
+													</motion.a>
+												</Link>
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-1ogrfv2"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"owvW4D64P"}
+										style={{
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
 											"--framer-link-text-color": "rgb(0, 153, 255)",
 											"--framer-link-text-decoration": "underline",
 										}}
@@ -352,146 +668,261 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											<motion.p
 												dir={"auto"}
 												style={{
-													"--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=",
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
 													"--framer-font-family": '"Geist Mono", monospace',
-													"--framer-font-size": "18px",
-													"--framer-font-weight": "500",
-													"--framer-letter-spacing": "-0.02em",
-													"--framer-line-height": "1em",
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
 													"--framer-text-color":
-														"var(--extracted-r6o4lv, var(--token-c7046da6-529c-4bf7-84f8-82aca30594c1, rgb(0, 0, 0)))",
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
 												}}
 											>
-												{".nix"}
+												{"BLOGS"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-9car33"}
+										fonts={["GF;Geist Mono-regular"]}
+										layoutDependency={layoutDependency}
+										layoutId={"XBWwu7M1H"}
+										style={{
+											"--extracted-r6o4lv":
+												"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												dir={"auto"}
+												style={{
+													"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
+													"--framer-font-family": '"Geist Mono", monospace',
+													"--framer-font-open-type-features":
+														"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
+													"--framer-font-size": "12px",
+													"--framer-line-height": "1.4em",
+													"--framer-text-color":
+														"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
+													"--framer-text-transform": "uppercase",
+												}}
+											>
+												{"Contact"}
 											</motion.p>
 										</React.Fragment>
 									</RichText>
 								</motion.div>
-							</motion.div>
-						)}
-						{isDisplayed() && (
-							<motion.div
-								className={"framer-jyefr7"}
-								layoutDependency={layoutDependency}
-								layoutId={"P12Ey6A_f"}
-							>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-12t7x9x"}
-									fonts={["Inter"]}
+							)}
+							{isDisplayed2() && (
+								<motion.div
+									className={"framer-1ygq4iv"}
 									layoutDependency={layoutDependency}
-									layoutId={"MiHPrZDOD"}
-									style={{
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
+									layoutId={"z3yzOruPB"}
 								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-1vpqesh"}
-											data-styles-preset={"eO0w7qcNn"}
-											dir={"auto"}
+									<motion.div
+										className={"framer-pct3t2"}
+										layoutDependency={layoutDependency}
+										layoutId={"GSjmjkWIS"}
+									>
+										<motion.div
+											className={"framer-1txqsft"}
+											data-framer-name={"Nix logo"}
+											layoutDependency={layoutDependency}
+											layoutId={"wHVbxPq5k"}
 										>
-											{"Home"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-10u7yvm"}
-									fonts={["Inter"]}
+											<motion.div
+												className={"framer-10mujyt"}
+												layoutDependency={layoutDependency}
+												layoutId={"Lm4xOeiOZ"}
+											>
+												<SVG
+													className={"framer-1cccj0e"}
+													layoutDependency={layoutDependency}
+													layoutId={"rBLeewMb6"}
+													requiresOverflowVisible={false}
+													svg={
+														'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.598 23.035" overflow="visible"><g><defs><linearGradient id="idsrBLeewMb6_1g-513125731" x1="0.9407911342413537" x2="0.0592088657586462" y1="1" y2="0"><stop offset="0" stop-color="rgba(255, 68, 0, 0.2)" stop-opacity="0.2"></stop><stop offset="1" stop-color="rgb(255, 68, 0)" stop-opacity="1"></stop></linearGradient></defs><path d="M 17.498 15.524 C 17.561 15.468 17.598 15.388 17.598 15.304 C 17.598 15.219 17.561 15.139 17.498 15.083 L 0.488 0.074 C 0.298 -0.093 0 0.041 0 0.294 L 0 15.171 C 0 15.255 0.036 15.335 0.099 15.391 L 8.68 22.962 C 8.791 23.06 8.957 23.06 9.068 22.962 L 17.498 15.523 Z" fill="url(#idsrBLeewMb6_1g-513125731)"></path></g></svg>'
+													}
+													withExternalLayout={true}
+												/>
+												<SVG
+													className={"framer-1xwh9oe"}
+													layoutDependency={layoutDependency}
+													layoutId={"G75V741OJ"}
+													requiresOverflowVisible={false}
+													svg={
+														'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.598 23.035" overflow="visible"><g><defs><linearGradient id="idsG75V741OJ_1g513125824" x1="0.05842446658608186" x2="0.9415755334139182" y1="0" y2="1"><stop offset="0" stop-color="rgba(255, 68, 0, 0.2)" stop-opacity="0.2"></stop><stop offset="1" stop-color="rgb(255, 68, 0)" stop-opacity="1"></stop></linearGradient></defs><path d="M 0.099 7.512 C 0.036 7.567 0 7.648 0 7.732 C 0 7.816 0.036 7.896 0.099 7.952 L 17.11 22.961 C 17.299 23.129 17.598 22.994 17.598 22.741 L 17.598 7.864 C 17.598 7.78 17.561 7.7 17.498 7.644 L 8.918 0.073 C 8.807 -0.024 8.641 -0.024 8.53 0.073 Z" fill="url(#idsG75V741OJ_1g513125824)"></path></g></svg>'
+													}
+													withExternalLayout={true}
+												/>
+											</motion.div>
+										</motion.div>
+										<RichText
+											__fromCanvasComponent={true}
+											className={"framer-1mf7rop"}
+											fonts={["GF;Geist Mono-500"]}
+											layoutDependency={layoutDependency}
+											layoutId={"cbCaMjb7Q"}
+											style={{
+												"--extracted-r6o4lv":
+													"var(--token-c7046da6-529c-4bf7-84f8-82aca30594c1, rgb(0, 0, 0))",
+												"--framer-link-text-color": "rgb(0, 153, 255)",
+												"--framer-link-text-decoration": "underline",
+											}}
+											verticalAlignment={"top"}
+											withExternalLayout={true}
+										>
+											<React.Fragment>
+												<motion.p
+													dir={"auto"}
+													style={{
+														"--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=",
+														"--framer-font-family": '"Geist Mono", monospace',
+														"--framer-font-size": "18px",
+														"--framer-font-weight": "500",
+														"--framer-letter-spacing": "-0.02em",
+														"--framer-line-height": "1em",
+														"--framer-text-color":
+															"var(--extracted-r6o4lv, var(--token-c7046da6-529c-4bf7-84f8-82aca30594c1, rgb(0, 0, 0)))",
+													}}
+												>
+													{".nix"}
+												</motion.p>
+											</React.Fragment>
+										</RichText>
+									</motion.div>
+								</motion.div>
+							)}
+							{isDisplayed2() && (
+								<motion.div
+									className={"framer-jyefr7"}
 									layoutDependency={layoutDependency}
-									layoutId={"vMsnO9b8C"}
-									style={{
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
+									layoutId={"P12Ey6A_f"}
 								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-1vpqesh"}
-											data-styles-preset={"eO0w7qcNn"}
-											dir={"auto"}
-										>
-											{"Projects"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-5fqpxc"}
-									fonts={["Inter"]}
-									layoutDependency={layoutDependency}
-									layoutId={"jtDjXDKtO"}
-									style={{
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-1vpqesh"}
-											data-styles-preset={"eO0w7qcNn"}
-											dir={"auto"}
-										>
-											{"Playground"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1x4djic"}
-									fonts={["Inter"]}
-									layoutDependency={layoutDependency}
-									layoutId={"K7QGZ_pWL"}
-									style={{
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-1vpqesh"}
-											data-styles-preset={"eO0w7qcNn"}
-											dir={"auto"}
-										>
-											{"Resources"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-57luwi"}
-									fonts={["Inter"]}
-									layoutDependency={layoutDependency}
-									layoutId={"OKadJGUEm"}
-									style={{
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-1vpqesh"}
-											data-styles-preset={"eO0w7qcNn"}
-											dir={"auto"}
-										>
-											{"Contact"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-							</motion.div>
-						)}
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-12t7x9x"}
+										fonts={["Inter"]}
+										layoutDependency={layoutDependency}
+										layoutId={"MiHPrZDOD"}
+										style={{
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												className={"framer-styles-preset-1vpqesh"}
+												data-styles-preset={"eO0w7qcNn"}
+												dir={"auto"}
+											>
+												{"Home"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-10u7yvm"}
+										fonts={["Inter"]}
+										layoutDependency={layoutDependency}
+										layoutId={"vMsnO9b8C"}
+										style={{
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												className={"framer-styles-preset-1vpqesh"}
+												data-styles-preset={"eO0w7qcNn"}
+												dir={"auto"}
+											>
+												{"Projects"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-5fqpxc"}
+										fonts={["Inter"]}
+										layoutDependency={layoutDependency}
+										layoutId={"jtDjXDKtO"}
+										style={{
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												className={"framer-styles-preset-1vpqesh"}
+												data-styles-preset={"eO0w7qcNn"}
+												dir={"auto"}
+											>
+												{"Playground"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-1x4djic"}
+										fonts={["Inter"]}
+										layoutDependency={layoutDependency}
+										layoutId={"K7QGZ_pWL"}
+										style={{
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												className={"framer-styles-preset-1vpqesh"}
+												data-styles-preset={"eO0w7qcNn"}
+												dir={"auto"}
+											>
+												{"Resources"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+									<RichText
+										__fromCanvasComponent={true}
+										className={"framer-57luwi"}
+										fonts={["Inter"]}
+										layoutDependency={layoutDependency}
+										layoutId={"OKadJGUEm"}
+										style={{
+											"--framer-link-text-color": "rgb(0, 153, 255)",
+											"--framer-link-text-decoration": "underline",
+										}}
+										verticalAlignment={"top"}
+										withExternalLayout={true}
+									>
+										<React.Fragment>
+											<motion.p
+												className={"framer-styles-preset-1vpqesh"}
+												data-styles-preset={"eO0w7qcNn"}
+												dir={"auto"}
+											>
+												{"Contact"}
+											</motion.p>
+										</React.Fragment>
+									</RichText>
+								</motion.div>
+							)}
+						</motion.div>
 						<motion.div
 							className={"framer-1ylcr8t"}
 							layoutDependency={layoutDependency}
@@ -502,7 +933,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								layoutDependency={layoutDependency}
 								layoutId={"kyHruCXQJ"}
 							>
-								{isDisplayed() && (
+								{isDisplayed2() && (
 									<ComponentViewportProvider>
 										<SmartComponentScopedContainer
 											className={"framer-vq6vp3-container"}
@@ -529,7 +960,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										</SmartComponentScopedContainer>
 									</ComponentViewportProvider>
 								)}
-								{isDisplayed1() && (
+								{isDisplayed3() && (
 									<motion.div
 										className={"framer-13qcvq5"}
 										layoutDependency={layoutDependency}
@@ -597,7 +1028,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												})}
 											</SmartComponentScopedContainer>
 										</ComponentViewportProvider>
-										{isDisplayed2(MqNiAk5222 !== false) && (
+										{isDisplayed4(MqNiAk5222 !== false) && (
 											<motion.div
 												className={"framer-1z5tib"}
 												layoutDependency={layoutDependency}
@@ -636,7 +1067,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												</ComponentViewportProvider>
 											</motion.div>
 										)}
-										{isDisplayed2(h869eu5aS2 !== false) && (
+										{isDisplayed4(h869eu5aS2 !== false) && (
 											<Link
 												href={"https://github.com/nikhilk-dev"}
 												motionChild={true}
@@ -685,13 +1116,13 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										)}
 									</motion.div>
 								)}
-								{isDisplayed3() && (
+								{isDisplayed5() && (
 									<motion.div
 										className={"framer-1o0bbxt"}
 										layoutDependency={layoutDependency}
 										layoutId={"GYUeit0sA"}
 									>
-										{isDisplayed4() && (
+										{isDisplayed6() && (
 											<RichText
 												__fromCanvasComponent={true}
 												className={"framer-yox8xb"}
@@ -742,7 +1173,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												</React.Fragment>
 											</RichText>
 										)}
-										{isDisplayed4() && (
+										{isDisplayed6() && (
 											<RichText
 												__fromCanvasComponent={true}
 												className={"framer-1odct2"}
@@ -852,7 +1283,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												</motion.p>
 											</React.Fragment>
 										</RichText>
-										{isDisplayed4() && (
+										{isDisplayed6() && (
 											<RichText
 												__fromCanvasComponent={true}
 												className={"framer-d7w4p7"}
@@ -1020,108 +1451,13 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								)}
 							</motion.div>
 						</motion.div>
-						{isDisplayed5() && (
-							<Link
-								motionChild={true}
-								nodeId={"tyuUlYwxT"}
-								scopeId={"wd0K_zVCd"}
-								{...addPropertyOverrides(
-									{
-										Lpvjxo4WY: {
-											href: {
-												webPageId: "Iv9dQrpBz",
-											},
-											openInNewTab: false,
-										},
-									},
-									baseVariant,
-									gestureVariant,
-								)}
-							>
-								<motion.a
-									className={"framer-1s2nce2 framer-j5sbwh"}
-									layoutDependency={layoutDependency}
-									layoutId={"tyuUlYwxT"}
-								>
-									<ComponentViewportProvider>
-										<SmartComponentScopedContainer
-											className={"framer-1cr02vt-container"}
-											data-code-component-plugin-id={"84d4c1"}
-											isAuthoredByUser={true}
-											layoutDependency={layoutDependency}
-											layoutId={"Z9rD_5s0B-container"}
-											nodeId={"Z9rD_5s0B"}
-											rendersWithMotion={true}
-											scopeId={"wd0K_zVCd"}
-										>
-											<WalkingLogo
-												animationDuration={5}
-												blinkInterval={3}
-												buttonColor={"rgba(217, 217, 217, 0)"}
-												buttonFont={{
-													fontFamily:
-														'"IBM Plex Sans", "IBM Plex Sans Placeholder", sans-serif',
-													fontSize: "14px",
-													fontStyle: "normal",
-													fontWeight: 400,
-													letterSpacing: "-0.01em",
-													lineHeight: "1em",
-												}}
-												buttonOffsetX={0}
-												buttonOffsetY={-6}
-												buttonPadding={4}
-												buttonText={".what?"}
-												buttonTextColor={
-													"var(--token-df79e38c-c9e1-4fba-9890-9323ccb725c1, rgb(102, 102, 102))"
-												}
-												buttonTextSize={14}
-												enableAnimation={true}
-												enableBlink={true}
-												height={"100%"}
-												hoverMessageFontSize={12}
-												hoverMessages={[
-													{
-														text: ". Hi there \u{1F44B}",
-													},
-													{
-														text: ". We just became friends?",
-													},
-													{
-														text: ". Poke poke \u{1F440}",
-													},
-													{
-														text: ". Oops, you found me",
-													},
-													{
-														text: ". Let\u2019s talk design",
-													},
-													{
-														text: ". Hover hero \u{1F601}",
-													},
-												]}
-												id={"Z9rD_5s0B"}
-												layoutId={"Z9rD_5s0B"}
-												logoColor={
-													"var(--token-99df6449-e9f2-4797-8ee6-4b98273d37fc, rgb(17, 17, 17))"
-												}
-												logoScale={0.35}
-												moveDistance={24}
-												movementDirection={"both"}
-												showBubbleLive={false}
-												width={"100%"}
-											/>
-										</SmartComponentScopedContainer>
-									</ComponentViewportProvider>
-								</motion.a>
-							</Link>
-						)}
-						{isDisplayed6() && (
+						{isDisplayed7() && (
 							<motion.div
 								className={"framer-jba4od"}
 								layoutDependency={layoutDependency}
 								layoutId={"fYFPI9EQ4"}
 							>
-								{isDisplayed6() && (
+								{isDisplayed7() && (
 									<ComponentViewportProvider>
 										<SmartComponentScopedContainer
 											className={"framer-fgyfph-container"}
@@ -1148,7 +1484,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										</SmartComponentScopedContainer>
 									</ComponentViewportProvider>
 								)}
-								{isDisplayed6() && (
+								{isDisplayed7() && (
 									<motion.div
 										className={"framer-au5lya"}
 										layoutDependency={layoutDependency}
@@ -1172,7 +1508,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														y:
 															(componentViewport?.y || 0) +
 															(4 +
-																((componentViewport?.height || 40) - 8 - 32) /
+																((componentViewport?.height || 200) - 8 - 32) /
 																	2) +
 															0 +
 															0,
@@ -1292,323 +1628,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								)}
 							</motion.div>
 						)}
-						{isDisplayed7() && (
-							<motion.div
-								className={"framer-17ou6yk"}
-								layoutDependency={layoutDependency}
-								layoutId={"LMdOTkJu9"}
-							>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-utpxhr"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"tpjOvirUm"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											<Link
-												href={{
-													webPageId: "Iv9dQrpBz",
-												}}
-												motionChild={true}
-												nodeId={"tpjOvirUm"}
-												openInNewTab={false}
-												relValues={[]}
-												scopeId={"wd0K_zVCd"}
-												smoothScroll={false}
-											>
-												<motion.a
-													className={"framer-styles-preset-9s0pee"}
-													data-styles-preset={"kgVCYNaMl"}
-												>
-													{"home"}
-												</motion.a>
-											</Link>
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1mv6t2z"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"mEjuAubDP"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											<Link
-												href={{
-													webPageId: "TmTuoGYHE",
-												}}
-												motionChild={true}
-												nodeId={"mEjuAubDP"}
-												openInNewTab={false}
-												relValues={[]}
-												scopeId={"wd0K_zVCd"}
-												smoothScroll={false}
-											>
-												<motion.a
-													className={"framer-styles-preset-9s0pee"}
-													data-styles-preset={"kgVCYNaMl"}
-												>
-													{"WORK"}
-												</motion.a>
-											</Link>
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-ujrqjf"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"jxfSYxXHn"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											<Link
-												href={{
-													webPageId: "LUlZD6QvW",
-												}}
-												motionChild={true}
-												nodeId={"jxfSYxXHn"}
-												openInNewTab={false}
-												relValues={[]}
-												scopeId={"wd0K_zVCd"}
-												smoothScroll={false}
-											>
-												<motion.a
-													className={"framer-styles-preset-9s0pee"}
-													data-styles-preset={"kgVCYNaMl"}
-												>
-													{"ABOUT"}
-												</motion.a>
-											</Link>
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-178td1"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"QIl8hnESz"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											{"Playground"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1327eng"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"iTgaoWuX2"}
-									style={{
-										"--extracted-hl0iuy":
-											"var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37))",
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											<Link
-												href={{
-													webPageId: "qWbew6KYe",
-												}}
-												motionChild={true}
-												nodeId={"iTgaoWuX2"}
-												openInNewTab={false}
-												relValues={[]}
-												scopeId={"wd0K_zVCd"}
-												smoothScroll={false}
-											>
-												<motion.a
-													className={"framer-styles-preset-9s0pee"}
-													data-styles-preset={"kgVCYNaMl"}
-												>
-													<motion.span
-														style={{
-															"--framer-letter-spacing": "0.2em",
-															"--framer-text-color":
-																"var(--extracted-hl0iuy, var(--token-17586cc6-b205-4368-ade3-9f0f26d38021, rgb(244, 92, 37)))",
-														}}
-													>
-														{"\u2665\uFE0E"}
-													</motion.span>
-													{"Applause"}
-												</motion.a>
-											</Link>
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1ogrfv2"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"owvW4D64P"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											{"BLOGS"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-9car33"}
-									fonts={["GF;Geist Mono-regular"]}
-									layoutDependency={layoutDependency}
-									layoutId={"XBWwu7M1H"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99))",
-										"--framer-link-text-color": "rgb(0, 153, 255)",
-										"--framer-link-text-decoration": "underline",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											dir={"auto"}
-											style={{
-												"--font-selector": "R0Y7R2Vpc3QgTW9uby1yZWd1bGFy",
-												"--framer-font-family": '"Geist Mono", monospace',
-												"--framer-font-open-type-features":
-													"'blwf' on, 'cv09' on, 'cv03' on, 'cv04' on, 'cv11' on",
-												"--framer-font-size": "12px",
-												"--framer-line-height": "1.4em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-1680a61f-616b-4800-b66d-bfa16b2c9fa1, rgb(82, 95, 99)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											{"Contact"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-							</motion.div>
-						)}
 					</motion.div>
 				</Transition>
 			</Variants>
@@ -1617,52 +1636,56 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 });
 var css3 = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-1SsqJ.framer-j5sbwh, .framer-1SsqJ .framer-j5sbwh { display: block; }",
-	".framer-1SsqJ.framer-4xtrq1 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: var(--overflow-clip-fallback, clip); padding: 4px 40px 4px 40px; position: relative; width: 1200px; }",
-	".framer-1SsqJ .framer-1ygq4iv, .framer-1SsqJ .framer-13qcvq5 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-pct3t2 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-1txqsft { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 24px; }",
-	".framer-1SsqJ .framer-10mujyt { flex: none; height: 24px; overflow: var(--overflow-clip-fallback, clip); position: relative; width: 20px; }",
-	".framer-1SsqJ .framer-1cccj0e { height: 23px; left: 0px; position: absolute; top: 1px; width: 18px; }",
-	".framer-1SsqJ .framer-1xwh9oe { height: 23px; left: 3px; position: absolute; top: 1px; width: 18px; }",
-	".framer-1SsqJ .framer-1mf7rop, .framer-1SsqJ .framer-12t7x9x, .framer-1SsqJ .framer-10u7yvm, .framer-1SsqJ .framer-5fqpxc, .framer-1SsqJ .framer-1x4djic, .framer-1SsqJ .framer-57luwi, .framer-1SsqJ .framer-yox8xb, .framer-1SsqJ .framer-1odct2, .framer-1SsqJ .framer-mrste, .framer-1SsqJ .framer-d7w4p7, .framer-1SsqJ .framer-spnwv9, .framer-1SsqJ .framer-asp4we, .framer-1SsqJ .framer-utpxhr, .framer-1SsqJ .framer-1mv6t2z, .framer-1SsqJ .framer-ujrqjf, .framer-1SsqJ .framer-178td1, .framer-1SsqJ .framer-1327eng, .framer-1SsqJ .framer-1ogrfv2, .framer-1SsqJ .framer-9car33 { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-1SsqJ .framer-jyefr7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 40px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-1ylcr8t { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-rxa2rj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-vq6vp3-container, .framer-1SsqJ .framer-fgyfph-container { flex: none; height: auto; position: relative; width: auto; }",
-	".framer-1SsqJ .framer-1fwrtlq-container { flex: none; height: auto; position: relative; width: auto; z-index: 1; }",
-	".framer-1SsqJ .framer-1z5tib, .framer-1SsqJ .framer-971gxk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 32px; }",
-	".framer-1SsqJ .framer-9a83wi-container, .framer-1SsqJ .framer-1e7omgd-container, .framer-1SsqJ .framer-1o0qe7-container, .framer-1SsqJ .framer-pwcnh9-container { flex: none; height: 18px; position: relative; width: 18px; }",
-	".framer-1SsqJ .framer-1fqtnpj, .framer-1SsqJ .framer-1lv3nvq { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; text-decoration: none; width: 32px; }",
-	".framer-1SsqJ .framer-1o0bbxt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-1s2nce2 { flex: none; height: 24px; overflow: visible; position: relative; width: 52px; }",
-	".framer-1SsqJ .framer-1cr02vt-container { flex: none; height: auto; left: -1px; position: absolute; top: -23px; width: auto; }",
-	".framer-1SsqJ .framer-jba4od { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; min-height: 200px; min-width: 654px; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ .framer-au5lya { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 6px; height: 32px; justify-content: flex-end; overflow: visible; padding: 0px; position: relative; width: 112px; }",
-	".framer-1SsqJ .framer-1gapiw7-container { flex: none; height: 32px; position: relative; width: 32px; z-index: 1; }",
-	".framer-1SsqJ .framer-17ou6yk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 24px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-1SsqJ.framer-v-18oqvn8.framer-4xtrq1 { overflow: visible; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-1ylcr8t { gap: 20px; order: 5; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-rxa2rj { flex-direction: row; gap: 56px; order: 0; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-13qcvq5 { gap: 6px; height: 32px; justify-content: flex-end; order: 2; width: 112px; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-1fwrtlq-container { height: 32px; order: 2; width: 32px; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-1z5tib, .framer-1SsqJ.framer-v-6grjhl .framer-1o0bbxt, .framer-1SsqJ.framer-v-6grjhl .framer-au5lya, .framer-1SsqJ.framer-v-6grjhl .framer-971gxk, .framer-1SsqJ.framer-v-1j5tfz4 .framer-au5lya, .framer-1SsqJ.framer-v-1j5tfz4 .framer-971gxk { order: 0; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-1fqtnpj, .framer-1SsqJ.framer-v-6grjhl .framer-fgyfph-container, .framer-1SsqJ.framer-v-6grjhl .framer-1lv3nvq, .framer-1SsqJ.framer-v-1j5tfz4 .framer-fgyfph-container, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1lv3nvq { order: 1; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-1s2nce2 { order: 0; text-decoration: none; width: 112px; }",
-	".framer-1SsqJ.framer-v-18oqvn8 .framer-17ou6yk { order: 4; }",
-	".framer-1SsqJ.framer-v-6grjhl.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 810px; }",
-	".framer-1SsqJ.framer-v-6grjhl .framer-1ylcr8t, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1ylcr8t { flex: 1 0 0px; gap: 20px; order: 4; width: 1px; }",
-	".framer-1SsqJ.framer-v-6grjhl .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; order: 0; width: 1px; }",
-	".framer-1SsqJ.framer-v-6grjhl .framer-1s2nce2, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1s2nce2 { order: 0; width: 150px; }",
-	".framer-1SsqJ.framer-v-6grjhl .framer-jba4od, .framer-1SsqJ.framer-v-1j5tfz4 .framer-jba4od { height: 32px; min-height: unset; min-width: unset; order: 5; width: 150px; }",
-	".framer-1SsqJ.framer-v-6grjhl .framer-1gapiw7-container, .framer-1SsqJ.framer-v-1j5tfz4 .framer-1gapiw7-container { order: 2; }",
-	".framer-1SsqJ.framer-v-1j5tfz4.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 390px; }",
-	".framer-1SsqJ.framer-v-1j5tfz4 .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; min-height: 40px; order: 0; width: 1px; }",
-	...css,
+	".framer-I4CG8.framer-j5sbwh, .framer-I4CG8 .framer-j5sbwh { display: block; }",
+	".framer-I4CG8.framer-4xtrq1 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: var(--overflow-clip-fallback, clip); padding: 4px 40px 4px 40px; position: relative; width: 1200px; }",
+	".framer-I4CG8 .framer-1joly73, .framer-I4CG8 .framer-1ygq4iv, .framer-I4CG8 .framer-13qcvq5 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-1s2nce2 { flex: none; height: 24px; overflow: visible; position: relative; width: 52px; }",
+	".framer-I4CG8 .framer-1cr02vt-container { flex: none; height: auto; left: -1px; position: absolute; top: -23px; width: auto; }",
+	".framer-I4CG8 .framer-17ou6yk { align-content: center; align-items: center; display: flex; flex: 1 0 0px; flex-direction: row; flex-wrap: nowrap; gap: 24px; height: 20px; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 1px; }",
+	".framer-I4CG8 .framer-utpxhr, .framer-I4CG8 .framer-1mv6t2z, .framer-I4CG8 .framer-ujrqjf, .framer-I4CG8 .framer-178td1, .framer-I4CG8 .framer-1327eng, .framer-I4CG8 .framer-1ogrfv2, .framer-I4CG8 .framer-9car33, .framer-I4CG8 .framer-1mf7rop, .framer-I4CG8 .framer-12t7x9x, .framer-I4CG8 .framer-10u7yvm, .framer-I4CG8 .framer-5fqpxc, .framer-I4CG8 .framer-1x4djic, .framer-I4CG8 .framer-57luwi, .framer-I4CG8 .framer-yox8xb, .framer-I4CG8 .framer-1odct2, .framer-I4CG8 .framer-mrste, .framer-I4CG8 .framer-d7w4p7, .framer-I4CG8 .framer-spnwv9, .framer-I4CG8 .framer-asp4we { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+	".framer-I4CG8 .framer-pct3t2 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-1txqsft { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 24px; }",
+	".framer-I4CG8 .framer-10mujyt { flex: none; height: 24px; overflow: var(--overflow-clip-fallback, clip); position: relative; width: 20px; }",
+	".framer-I4CG8 .framer-1cccj0e { height: 23px; left: 0px; position: absolute; top: 1px; width: 18px; }",
+	".framer-I4CG8 .framer-1xwh9oe { height: 23px; left: 3px; position: absolute; top: 1px; width: 18px; }",
+	".framer-I4CG8 .framer-jyefr7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 40px; height: min-content; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-1ylcr8t { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-rxa2rj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-vq6vp3-container, .framer-I4CG8 .framer-fgyfph-container { flex: none; height: auto; position: relative; width: auto; }",
+	".framer-I4CG8 .framer-1fwrtlq-container { flex: none; height: auto; position: relative; width: auto; z-index: 1; }",
+	".framer-I4CG8 .framer-1z5tib, .framer-I4CG8 .framer-971gxk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 32px; }",
+	".framer-I4CG8 .framer-9a83wi-container, .framer-I4CG8 .framer-1e7omgd-container, .framer-I4CG8 .framer-1o0qe7-container, .framer-I4CG8 .framer-pwcnh9-container { flex: none; height: 18px; position: relative; width: 18px; }",
+	".framer-I4CG8 .framer-1fqtnpj, .framer-I4CG8 .framer-1lv3nvq { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 32px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; text-decoration: none; width: 32px; }",
+	".framer-I4CG8 .framer-1o0bbxt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: 20px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-jba4od { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; min-height: 200px; min-width: 654px; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+	".framer-I4CG8 .framer-au5lya { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 6px; height: 32px; justify-content: flex-end; overflow: visible; padding: 0px; position: relative; width: 112px; }",
+	".framer-I4CG8 .framer-1gapiw7-container { flex: none; height: 32px; position: relative; width: 32px; z-index: 1; }",
+	".framer-I4CG8.framer-v-18oqvn8.framer-4xtrq1 { overflow: visible; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1joly73 { gap: 200px; order: 0; width: 1008px; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1s2nce2 { text-decoration: none; width: 200px; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-utpxhr, .framer-I4CG8.framer-v-18oqvn8 .framer-1z5tib, .framer-I4CG8.framer-v-6grjhl .framer-1joly73, .framer-I4CG8.framer-v-6grjhl .framer-1o0bbxt, .framer-I4CG8.framer-v-6grjhl .framer-au5lya, .framer-I4CG8.framer-v-6grjhl .framer-971gxk, .framer-I4CG8.framer-v-1j5tfz4 .framer-1joly73, .framer-I4CG8.framer-v-1j5tfz4 .framer-au5lya, .framer-I4CG8.framer-v-1j5tfz4 .framer-971gxk { order: 0; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1mv6t2z, .framer-I4CG8.framer-v-18oqvn8 .framer-1fqtnpj, .framer-I4CG8.framer-v-6grjhl .framer-fgyfph-container, .framer-I4CG8.framer-v-6grjhl .framer-1lv3nvq, .framer-I4CG8.framer-v-1j5tfz4 .framer-fgyfph-container, .framer-I4CG8.framer-v-1j5tfz4 .framer-1lv3nvq { order: 1; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-ujrqjf, .framer-I4CG8.framer-v-6grjhl .framer-1gapiw7-container, .framer-I4CG8.framer-v-1j5tfz4 .framer-1gapiw7-container { order: 2; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-178td1 { order: 7; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1327eng { order: 3; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1ogrfv2 { order: 4; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-9car33 { order: 5; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1ylcr8t { gap: 20px; order: 1; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-rxa2rj { flex-direction: row; gap: 56px; order: 0; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-13qcvq5 { gap: 6px; height: 32px; justify-content: flex-end; order: 2; width: 112px; }",
+	".framer-I4CG8.framer-v-18oqvn8 .framer-1fwrtlq-container { height: 32px; order: 2; width: 32px; }",
+	".framer-I4CG8.framer-v-6grjhl.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 810px; }",
+	".framer-I4CG8.framer-v-6grjhl .framer-1s2nce2, .framer-I4CG8.framer-v-1j5tfz4 .framer-1s2nce2 { width: 150px; }",
+	".framer-I4CG8.framer-v-6grjhl .framer-1ylcr8t, .framer-I4CG8.framer-v-1j5tfz4 .framer-1ylcr8t { flex: 1 0 0px; gap: 20px; order: 1; width: 1px; }",
+	".framer-I4CG8.framer-v-6grjhl .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; order: 0; width: 1px; }",
+	".framer-I4CG8.framer-v-6grjhl .framer-jba4od, .framer-I4CG8.framer-v-1j5tfz4 .framer-jba4od { height: 32px; min-height: unset; min-width: unset; order: 2; width: 150px; }",
+	".framer-I4CG8.framer-v-1j5tfz4.framer-4xtrq1 { gap: 10px; justify-content: flex-start; overflow: visible; padding: 4px 24px 4px 24px; width: 390px; }",
+	".framer-I4CG8.framer-v-1j5tfz4 .framer-rxa2rj { flex: 1 0 0px; flex-direction: row; gap: 56px; min-height: 40px; order: 0; width: 1px; }",
 	...css2,
-	'.framer-1SsqJ[data-border="true"]::after, .framer-1SsqJ [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
+	...css,
+	'.framer-I4CG8[data-border="true"]::after, .framer-I4CG8 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
 ];
-var Framerwd0K_zVCd = withCSS(Component, css3, "framer-1SsqJ");
+var Framerwd0K_zVCd = withCSS(Component, css3, "framer-I4CG8");
 var stdin_default2 = Framerwd0K_zVCd;
 Framerwd0K_zVCd.displayName = "Top Global Navbar";
 Framerwd0K_zVCd.defaultProps = {
@@ -1701,6 +1724,23 @@ addFonts(
 		{
 			explicitInter: true,
 			fonts: [
+				{
+					cssFamilyName: "IBM Plex Sans",
+					source: "google",
+					style: "normal",
+					uiFamilyName: "IBM Plex Sans",
+					url: "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llzBaI5loa26g.woff2",
+					weight: "400",
+				},
+				{
+					cssFamilyName: "Geist Mono",
+					openType: true,
+					source: "google",
+					style: "normal",
+					uiFamilyName: "Geist Mono",
+					url: "https://fonts.gstatic.com/s/geistmono/v4/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KJ5W7ihaO_CS.woff2",
+					weight: "400",
+				},
 				{
 					cssFamilyName: "Geist Mono",
 					source: "google",
@@ -1776,31 +1816,14 @@ addFonts(
 					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
 					weight: "400",
 				},
-				{
-					cssFamilyName: "Geist Mono",
-					openType: true,
-					source: "google",
-					style: "normal",
-					uiFamilyName: "Geist Mono",
-					url: "https://fonts.gstatic.com/s/geistmono/v4/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KJ5W7ihaO_CS.woff2",
-					weight: "400",
-				},
-				{
-					cssFamilyName: "IBM Plex Sans",
-					source: "google",
-					style: "normal",
-					uiFamilyName: "IBM Plex Sans",
-					url: "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llzBaI5loa26g.woff2",
-					weight: "400",
-				},
 			],
 		},
+		...WalkingLogoFonts,
 		...HamburgerMenuFonts,
 		...SingleToggleFonts,
 		...PhosphorFonts,
-		...WalkingLogoFonts,
-		...getFontsFromSharedStyle(fonts),
 		...getFontsFromSharedStyle(fonts2),
+		...getFontsFromSharedStyle(fonts),
 	],
 	{
 		supportsExplicitInterCodegen: true,
