@@ -3,7 +3,7 @@
 import { addPropertyControls, ControlType, useIsStaticRenderer } from "framer"
 import { motion, useInView } from "framer-motion"
 import type { CSSProperties } from "react"
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useMemo } from "react"
 
 interface Testimonial {
     name: string
@@ -18,53 +18,77 @@ interface Testimonial {
 }
 
 interface MosaicTestimonialGridProps {
-    testimonials: Testimonial[]
-    cardBackground: string
-    textColor: string
-    nameColor: string
-    roleColor: string
-    nameFont: CSSProperties
-    roleFont: CSSProperties
-    contentFont: CSSProperties
-    generalContentFont: CSSProperties
-    generalContent: string
-    generalContentColor: string
-    showGeneralContent: boolean
-    gap: number
-    contentPadding: number
-    mediaPadding: number
-    borderRadius: number
-    mediaRadius: number
-    showShadow: boolean
-    columns: number
-    mobileColumns: number
-    tabletColumns: number
-    desktopColumns: number
-    mobileBreakpoint: number
-    tabletBreakpoint: number
-    minColumnWidth: number
-    gridType: "masonry" | "uniform" | "alternating"
-    nameContentSpacing: number
-    minCardHeight: number
-    testimonialAlign: "top" | "bottom"
-    enableAnimation: boolean
-    animationType:
-        | "fade"
-        | "slide-up"
-        | "slide-down"
-        | "slide-left"
-        | "slide-right"
-        | "scale"
-        | "rotate"
-        | "bounce"
-        | "flip-x"
-        | "flip-y"
-        | "zoom"
-        | "swing"
-        | "blur"
-    animationDuration: number
-    animationDelay: number
-    animationScale: number
+    content: {
+        testimonials: Testimonial[]
+        showGeneralContent: boolean
+        generalContent: string
+    }
+    layout: {
+        gridType:
+            | "masonry"
+            | "uniform"
+            | "alternating"
+            | "staggered"
+            | "pyramid"
+            | "zigzag"
+            | "random"
+            | "featured"
+        minColumnWidth: number
+        gap: number
+        testimonialAlign: "top" | "bottom"
+        minRowHeight: number
+    }
+    responsive: {
+        mobileColumns: number
+        tabletColumns: number
+        desktopColumns: number
+        mobileBreakpoint: number
+        tabletBreakpoint: number
+    }
+    styling: {
+        cardBackground: string
+        borderRadius: number
+        showShadow: boolean
+        mediaRadius: number
+        avatarSize: number
+        avatarRadius: number
+    }
+    typography: {
+        nameColor: string
+        nameFont: CSSProperties
+        roleColor: string
+        roleFont: CSSProperties
+        companyFont: CSSProperties
+        textColor: string
+        contentFont: CSSProperties
+        generalContentColor: string
+        generalContentFont: CSSProperties
+    }
+    spacing: {
+        contentPadding: number
+        mediaPadding: number
+        nameContentSpacing: number
+    }
+    animation: {
+        enableAnimation: boolean
+        animationType:
+            | "fade"
+            | "slide-up"
+            | "slide-down"
+            | "slide-left"
+            | "slide-right"
+            | "scale"
+            | "rotate"
+            | "bounce"
+            | "flip-x"
+            | "flip-y"
+            | "zoom"
+            | "swing"
+            | "blur"
+        animationDuration: number
+        animationDelay: number
+        animationScale: number
+    }
     style?: CSSProperties
 }
 
@@ -72,94 +96,98 @@ interface MosaicTestimonialGridProps {
  * @framerSupportedLayoutWidth fixed
  * @framerSupportedLayoutHeight auto
  */
-export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps) {
+export default function MosaicTestimonialGrid(
+    props: MosaicTestimonialGridProps
+) {
     const {
-        testimonials,
-        cardBackground,
-        textColor,
-        nameColor,
-        roleColor,
-        nameFont,
-        roleFont,
-        contentFont,
-        generalContentFont,
-        generalContent,
-        generalContentColor,
-        showGeneralContent,
-        gap,
-        contentPadding,
-        mediaPadding,
-        borderRadius,
-        mediaRadius,
-        showShadow,
-        columns,
-        mobileColumns,
-        tabletColumns,
-        desktopColumns,
-        mobileBreakpoint,
-        tabletBreakpoint,
-        minColumnWidth,
-        gridType,
-        nameContentSpacing,
-        minCardHeight,
-        testimonialAlign,
-        enableAnimation,
-        animationType,
-        animationDuration,
-        animationDelay,
-        animationScale,
+        content,
+        layout,
+        responsive,
+        styling,
+        typography,
+        spacing,
+        animation,
         style,
     } = props
 
     const isStatic = useIsStaticRenderer()
     const containerRef = useRef(null)
     const isInView = useInView(containerRef, { once: true, amount: 0.1 })
-    const [currentColumns, setCurrentColumns] = useState(columns)
+    const [currentColumns, setCurrentColumns] = useState(responsive.mobileColumns)
+
+    // Create a random order for animations
+    const randomOrder = useMemo(() => {
+        const indices = content.testimonials.map((_, i) => i)
+        // Fisher-Yates shuffle
+        for (let i = indices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1))
+            ;[indices[i], indices[j]] = [indices[j], indices[i]]
+        }
+        return indices
+    }, [content.testimonials.length])
 
     useEffect(() => {
         if (typeof window === "undefined") {
-            setCurrentColumns(desktopColumns)
+            setCurrentColumns(responsive.desktopColumns)
             return
         }
 
         const updateColumns = () => {
             const width = window.innerWidth
-            if (width < mobileBreakpoint) {
-                setCurrentColumns(mobileColumns)
-            } else if (width < tabletBreakpoint) {
-                setCurrentColumns(tabletColumns)
+            if (width < responsive.mobileBreakpoint) {
+                setCurrentColumns(responsive.mobileColumns)
+            } else if (width < responsive.tabletBreakpoint) {
+                setCurrentColumns(responsive.tabletColumns)
             } else {
-                setCurrentColumns(desktopColumns)
+                setCurrentColumns(responsive.desktopColumns)
             }
         }
 
         updateColumns()
         window.addEventListener("resize", updateColumns)
         return () => window.removeEventListener("resize", updateColumns)
-    }, [mobileColumns, tabletColumns, desktopColumns, mobileBreakpoint, tabletBreakpoint])
+    }, [
+        responsive.mobileColumns,
+        responsive.tabletColumns,
+        responsive.desktopColumns,
+        responsive.mobileBreakpoint,
+        responsive.tabletBreakpoint,
+    ])
 
-    const gridTemplateColumns = `repeat(${currentColumns}, minmax(${minColumnWidth}px, 1fr))`
+    const gridTemplateColumns = `repeat(${currentColumns}, minmax(${layout.minColumnWidth}px, 1fr))`
 
     const getAnimationVariants = (type: string) => {
         switch (type) {
             case "fade":
                 return { initial: { opacity: 0 }, animate: { opacity: 1 } }
             case "slide-up":
-                return { initial: { opacity: 0, y: 50 }, animate: { opacity: 1, y: 0 } }
+                return {
+                    initial: { opacity: 0, y: 50 },
+                    animate: { opacity: 1, y: 0 },
+                }
             case "slide-down":
-                return { initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 } }
+                return {
+                    initial: { opacity: 0, y: -50 },
+                    animate: { opacity: 1, y: 0 },
+                }
             case "slide-left":
-                return { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } }
+                return {
+                    initial: { opacity: 0, x: 50 },
+                    animate: { opacity: 1, x: 0 },
+                }
             case "slide-right":
-                return { initial: { opacity: 0, x: -50 }, animate: { opacity: 1, x: 0 } }
+                return {
+                    initial: { opacity: 0, x: -50 },
+                    animate: { opacity: 1, x: 0 },
+                }
             case "scale":
                 return {
-                    initial: { opacity: 0, scale: animationScale },
+                    initial: { opacity: 0, scale: animation.animationScale },
                     animate: { opacity: 1, scale: 1 },
                 }
             case "rotate":
                 return {
-                    initial: { opacity: 0, scale: animationScale, rotate: -10 },
+                    initial: { opacity: 0, scale: animation.animationScale, rotate: -10 },
                     animate: { opacity: 1, scale: 1, rotate: 0 },
                 }
             case "bounce":
@@ -168,11 +196,20 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
                     animate: { opacity: 1, y: 0, scale: 1 },
                 }
             case "flip-x":
-                return { initial: { opacity: 0, rotateX: -90 }, animate: { opacity: 1, rotateX: 0 } }
+                return {
+                    initial: { opacity: 0, rotateX: -90 },
+                    animate: { opacity: 1, rotateX: 0 },
+                }
             case "flip-y":
-                return { initial: { opacity: 0, rotateY: -90 }, animate: { opacity: 1, rotateY: 0 } }
+                return {
+                    initial: { opacity: 0, rotateY: -90 },
+                    animate: { opacity: 1, rotateY: 0 },
+                }
             case "zoom":
-                return { initial: { opacity: 0, scale: 0 }, animate: { opacity: 1, scale: 1 } }
+                return {
+                    initial: { opacity: 0, scale: 0 },
+                    animate: { opacity: 1, scale: 1 },
+                }
             case "swing":
                 return {
                     initial: { opacity: 0, rotate: -15, scale: 0.9 },
@@ -194,21 +231,36 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
             style={{
                 ...style,
                 width: "100%",
-                padding: gap,
                 display: "grid",
                 gridTemplateColumns,
-                gap,
-                gridAutoFlow: "dense",
+                gap: layout.gap,
+                gridAutoRows: `minmax(${layout.minRowHeight}px, auto)`,
+                overflowY: "auto",
+                overflowX: "hidden",
             }}
         >
-            {testimonials.map((testimonial, index) => {
+            {content.testimonials.map((testimonial, index) => {
                 let gridRowSpan = 1
 
-                if (gridType === "masonry") {
+                if (layout.gridType === "masonry") {
                     const isLarge = index % 5 === 0 || index % 5 === 3
                     gridRowSpan = isLarge ? 2 : 1
-                } else if (gridType === "alternating") {
+                } else if (layout.gridType === "alternating") {
                     gridRowSpan = index % 2 === 0 ? 2 : 1
+                } else if (layout.gridType === "staggered") {
+                    const pattern = [1, 2, 1, 2, 2, 1]
+                    gridRowSpan = pattern[index % pattern.length]
+                } else if (layout.gridType === "pyramid") {
+                    const pattern = [1, 2, 3, 2, 1]
+                    gridRowSpan = pattern[index % pattern.length]
+                } else if (layout.gridType === "zigzag") {
+                    const pattern = [1, 1, 2, 1, 1, 2]
+                    gridRowSpan = pattern[index % pattern.length]
+                } else if (layout.gridType === "random") {
+                    const pattern = [1, 2, 1, 3, 2, 1, 2]
+                    gridRowSpan = pattern[index % pattern.length]
+                } else if (layout.gridType === "featured") {
+                    gridRowSpan = index === 0 ? 3 : index % 4 === 0 ? 2 : 1
                 } else {
                     gridRowSpan = 1
                 }
@@ -219,55 +271,57 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
                 }
 
                 const video = testimonial.video || ""
-                const animationVariants = getAnimationVariants(animationType)
+                const animationVariants = getAnimationVariants(animation.animationType)
+
+                // Get random animation order
+                const animationOrder = randomOrder.indexOf(index)
 
                 return (
                     <motion.div
                         key={index}
                         initial={
-                            isStatic || !enableAnimation
+                            isStatic || !animation.enableAnimation
                                 ? false
                                 : animationVariants.initial
                         }
                         animate={
-                            isStatic || !enableAnimation
+                            isStatic || !animation.enableAnimation
                                 ? false
                                 : isInView
-                                ? animationVariants.animate
-                                : animationVariants.initial
+                                  ? animationVariants.animate
+                                  : animationVariants.initial
                         }
                         transition={
-                            isStatic || !enableAnimation
+                            isStatic || !animation.enableAnimation
                                 ? undefined
                                 : {
-                                      duration: animationDuration,
-                                      delay: index * animationDelay,
+                                      duration: animation.animationDuration,
+                                      delay: animationOrder * animation.animationDelay,
                                       ease: "easeOut",
                                   }
                         }
                         style={{
-                            backgroundColor: cardBackground,
-                            borderRadius,
+                            backgroundColor: styling.cardBackground,
+                            borderRadius: styling.borderRadius,
                             display: "flex",
                             flexDirection: "column",
-                            gridRow: `span ${gridRowSpan}`,
-                            minHeight: minCardHeight,
-                            boxShadow: showShadow
+                            boxShadow: styling.showShadow
                                 ? "0 4px 10px rgba(0,0,0,0.08)"
                                 : "none",
                             justifyContent:
-                                testimonialAlign === "bottom"
+                                layout.testimonialAlign === "bottom"
                                     ? "space-between"
                                     : "flex-start",
                             overflow: "hidden",
+                            gridRow: `span ${gridRowSpan}`,
                         }}
                     >
                         <div
                             style={{
                                 display: "flex",
                                 flexDirection: "column",
-                                gap: nameContentSpacing,
-                                padding: contentPadding,
+                                gap: spacing.nameContentSpacing,
+                                padding: spacing.contentPadding,
                             }}
                         >
                             <div
@@ -281,17 +335,17 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
                                     src={avatar.src}
                                     alt={avatar.alt}
                                     style={{
-                                        width: 48,
-                                        height: 48,
-                                        borderRadius: "50%",
+                                        width: styling.avatarSize,
+                                        height: styling.avatarSize,
+                                        borderRadius: styling.avatarRadius,
                                         objectFit: "cover",
                                     }}
                                 />
                                 <div style={{ flex: 1 }}>
                                     <div
                                         style={{
-                                            ...nameFont,
-                                            color: nameColor,
+                                            ...typography.nameFont,
+                                            color: typography.nameColor,
                                             marginBottom: 4,
                                         }}
                                     >
@@ -299,35 +353,38 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
                                     </div>
                                     <div
                                         style={{
-                                            ...roleFont,
-                                            color: roleColor,
+                                            ...typography.roleFont,
+                                            color: typography.roleColor,
                                         }}
                                     >
-                                        {testimonial.role} at {testimonial.company}
+                                        {testimonial.role} at{" "}
+                                        <span style={typography.companyFont}>
+                                            {testimonial.company}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {showGeneralContent && generalContent && (
+                        {content.showGeneralContent && content.generalContent && (
                             <p
                                 style={{
-                                    ...generalContentFont,
-                                    color: generalContentColor,
+                                    ...typography.generalContentFont,
+                                    color: typography.generalContentColor,
                                     margin: 0,
-                                    padding: `0 ${contentPadding}px ${nameContentSpacing}px ${contentPadding}px`,
+                                    padding: `0 ${spacing.contentPadding}px ${spacing.nameContentSpacing}px ${spacing.contentPadding}px`,
                                 }}
                             >
-                                {generalContent}
+                                {content.generalContent}
                             </p>
                         )}
 
                         <p
                             style={{
-                                ...contentFont,
-                                color: textColor,
+                                ...typography.contentFont,
+                                color: typography.textColor,
                                 margin: 0,
-                                padding: `0 ${contentPadding}px ${contentPadding}px ${contentPadding}px`,
+                                padding: `0 ${spacing.contentPadding}px ${spacing.contentPadding}px ${spacing.contentPadding}px`,
                             }}
                         >
                             {testimonial.content}
@@ -339,8 +396,8 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
                                 controls
                                 style={{
                                     width: "100%",
-                                    padding: mediaPadding,
-                                    borderRadius: mediaRadius,
+                                    padding: spacing.mediaPadding,
+                                    borderRadius: styling.mediaRadius,
                                 }}
                             />
                         )}
@@ -352,415 +409,501 @@ export default function MosaicTestimonialGrid(props: MosaicTestimonialGridProps)
 }
 
 addPropertyControls(MosaicTestimonialGrid, {
-    testimonials: {
-        type: ControlType.Array,
-        control: {
-            type: ControlType.Object,
-            controls: {
-                name: {
-                    type: ControlType.String,
-                    defaultValue: "John Doe",
-                },
-                role: {
-                    type: ControlType.String,
-                    defaultValue: "CEO",
-                },
-                company: {
-                    type: ControlType.String,
-                    defaultValue: "Company Inc",
-                },
-                content: {
-                    type: ControlType.String,
-                    displayTextArea: true,
-                    defaultValue:
-                        "This product has completely transformed how we work. Highly recommended!",
-                },
-                avatar: {
-                    type: ControlType.ResponsiveImage,
-                },
-                video: {
-                    type: ControlType.File,
-                    allowedFileTypes: ["mp4", "webm", "mov"],
-                    title: "Video (Optional)",
-                },
-            },
-        },
-        defaultValue: [
-            {
-                name: "Sarah Johnson",
-                role: "Product Manager",
-                company: "TechCorp",
-                content:
-                    "This platform has revolutionized our workflow. The intuitive design and powerful features have boosted our team productivity significantly.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/GfGkADagM4KEibNcIiRUWlfrR0.jpg",
-                    alt: "Sarah Johnson",
-                },
-            },
-            {
-                name: "Michael Chen",
-                role: "Lead Designer",
-                company: "Creative Studio",
-                content:
-                    "As a designer, I am particular about tools. This exceeds expectations with remarkable attention to detail and seamless integration.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/aNsAT3jCvt4zglbWCUoFe33Q.jpg",
-                    alt: "Michael Chen",
-                },
-            },
-            {
-                name: "Emily Rodriguez",
-                role: "Senior Developer",
-                company: "StartupXYZ",
-                content:
-                    "Best investment this year. The API is well-documented, performance outstanding, and development experience smooth.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/BYnxEV1zjYb9bhWh1IwBZ1ZoS60.jpg",
-                    alt: "Emily Rodriguez",
-                },
-            },
-            {
-                name: "David Kim",
-                role: "Marketing Director",
-                company: "Growth Co",
-                content:
-                    "The analytics dashboard provides incredible insights. Our conversion rates doubled and we make confident data-driven decisions.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/2uTNEj5aTl2K3NJaEFWMbnrA.jpg",
-                    alt: "David Kim",
-                },
-            },
-            {
-                name: "Lisa Anderson",
-                role: "CTO",
-                company: "Enterprise Inc",
-                content:
-                    "Security, scalability, and performance delivered perfectly. Seamless integration saved months of development time and resources.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/f9RiWoNpmlCMqVRIHz8l8wYfeI.jpg",
-                    alt: "Lisa Anderson",
-                },
-            },
-            {
-                name: "James Wilson",
-                role: "Founder and CEO",
-                company: "Innovate Labs",
-                content:
-                    "Game changer for our business. Automation features save countless hours weekly. Worth every penny invested.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/GfGkADagM4KEibNcIiRUWlfrR0.jpg",
-                    alt: "James Wilson",
-                },
-            },
-            {
-                name: "Rachel Martinez",
-                role: "Operations Manager",
-                company: "LogiTech Solutions",
-                content:
-                    "We were skeptical initially, but this tool proved itself repeatedly. The efficiency gains are real and measurable.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/aNsAT3jCvt4zglbWCUoFe33Q.jpg",
-                    alt: "Rachel Martinez",
-                },
-            },
-            {
-                name: "Tom Anderson",
-                role: "Sales Director",
-                company: "Revenue Inc",
-                content:
-                    "Our sales team loves it. Flawless CRM integration helped close thirty percent more deals this quarter.",
-                avatar: {
-                    src: "https://framerusercontent.com/images/BYnxEV1zjYb9bhWh1IwBZ1ZoS60.jpg",
-                    alt: "Tom Anderson",
-                },
-            },
-        ],
-    },
-    mobileColumns: {
-        type: ControlType.Number,
-        min: 1,
-        max: 6,
-        defaultValue: 1,
-        step: 1,
-        displayStepper: true,
-        title: "Mobile Columns",
-    },
-    tabletColumns: {
-        type: ControlType.Number,
-        min: 1,
-        max: 6,
-        defaultValue: 2,
-        step: 1,
-        displayStepper: true,
-        title: "Tablet Columns",
-    },
-    desktopColumns: {
-        type: ControlType.Number,
-        min: 1,
-        max: 6,
-        defaultValue: 3,
-        step: 1,
-        displayStepper: true,
-        title: "Desktop Columns",
-    },
-    mobileBreakpoint: {
-        type: ControlType.Number,
-        min: 320,
-        max: 1024,
-        defaultValue: 768,
-        unit: "px",
-        title: "Mobile Breakpoint",
-    },
-    tabletBreakpoint: {
-        type: ControlType.Number,
-        min: 768,
-        max: 1920,
-        defaultValue: 1024,
-        unit: "px",
-        title: "Tablet Breakpoint",
-    },
-    enableAnimation: {
-        type: ControlType.Boolean,
-        defaultValue: true,
-        enabledTitle: "On",
-        disabledTitle: "Off",
-        title: "Animation",
-    },
-    animationType: {
-        type: ControlType.Enum,
-        options: [
-            "fade",
-            "slide-up",
-            "slide-down",
-            "slide-left",
-            "slide-right",
-            "scale",
-            "rotate",
-            "bounce",
-            "flip-x",
-            "flip-y",
-            "zoom",
-            "swing",
-            "blur",
-        ],
-        optionTitles: [
-            "Fade",
-            "Slide Up",
-            "Slide Down",
-            "Slide Left",
-            "Slide Right",
-            "Scale",
-            "Rotate",
-            "Bounce",
-            "Flip X",
-            "Flip Y",
-            "Zoom",
-            "Swing",
-            "Blur",
-        ],
-        defaultValue: "fade",
-        title: "Animation Type",
-        hidden: ({ enableAnimation }) => !enableAnimation,
-    },
-    animationDuration: {
-        type: ControlType.Number,
-        min: 0.1,
-        max: 2,
-        defaultValue: 0.5,
-        step: 0.1,
-        unit: "s",
-        title: "Duration",
-        hidden: ({ enableAnimation }) => !enableAnimation,
-    },
-    animationDelay: {
-        type: ControlType.Number,
-        min: 0,
-        max: 0.5,
-        defaultValue: 0.1,
-        step: 0.05,
-        unit: "s",
-        title: "Stagger Delay",
-        hidden: ({ enableAnimation }) => !enableAnimation,
-    },
-    animationScale: {
-        type: ControlType.Number,
-        min: 0.5,
-        max: 1,
-        defaultValue: 0.9,
-        step: 0.05,
-        title: "Initial Scale",
-        hidden: ({ enableAnimation }) => !enableAnimation,
-    },
-    columns: {
-        type: ControlType.Number,
-        min: 1,
-        max: 6,
-        defaultValue: 3,
-        step: 1,
-        displayStepper: true,
-    },
-    minColumnWidth: {
-        type: ControlType.Number,
-        min: 200,
-        max: 500,
-        defaultValue: 300,
-        unit: "px",
-    },
-    gridType: {
-        type: ControlType.Enum,
-        options: ["masonry", "uniform", "alternating"],
-        optionTitles: ["Masonry", "Uniform", "Alternating"],
-        defaultValue: "masonry",
-        displaySegmentedControl: true,
-    },
-    minCardHeight: {
-        type: ControlType.Number,
-        min: 100,
-        max: 600,
-        defaultValue: 200,
-        unit: "px",
-        title: "Min Height",
-    },
-    testimonialAlign: {
-        type: ControlType.Enum,
-        options: ["top", "bottom"],
-        optionTitles: ["Top", "Bottom"],
-        defaultValue: "top",
-        displaySegmentedControl: true,
-        title: "Content Align",
-    },
-    nameContentSpacing: {
-        type: ControlType.Number,
-        min: 0,
-        max: 48,
-        defaultValue: 16,
-        unit: "px",
-        title: "Name Spacing",
-    },
-    cardBackground: {
-        type: ControlType.Color,
-        defaultValue: "#FFFFFF",
-    },
-    textColor: {
-        type: ControlType.Color,
-        defaultValue: "#000000",
-    },
-    nameColor: {
-        type: ControlType.Color,
-        defaultValue: "#000000",
-    },
-    roleColor: {
-        type: ControlType.Color,
-        defaultValue: "#CCCCCC",
-    },
-    nameFont: {
-        type: ControlType.Font,
-        controls: "extended",
-        defaultFontType: "sans-serif",
-        defaultValue: {
-            fontSize: "15px",
-            variant: "Medium",
-            letterSpacing: "-0.01em",
-            lineHeight: "1em",
-        },
-    },
-    roleFont: {
-        type: ControlType.Font,
-        controls: "extended",
-        defaultFontType: "sans-serif",
-        defaultValue: {
-            fontSize: "15px",
-            variant: "Medium",
-            letterSpacing: "-0.01em",
-            lineHeight: "1.3em",
-        },
-    },
-    contentFont: {
-        type: ControlType.Font,
-        controls: "extended",
-        defaultFontType: "sans-serif",
-        defaultValue: {
-            fontSize: "15px",
-            variant: "Medium",
-            letterSpacing: "-0.01em",
-            lineHeight: "1.3em",
-        },
-    },
-    gap: {
-        type: ControlType.Number,
-        min: 0,
-        max: 48,
-        defaultValue: 16,
-        unit: "px",
-    },
-    contentPadding: {
-        type: ControlType.Number,
-        min: 0,
-        max: 48,
-        defaultValue: 24,
-        unit: "px",
-        title: "Content Padding",
-    },
-    mediaPadding: {
-        type: ControlType.Number,
-        min: 0,
-        max: 48,
-        defaultValue: 16,
-        unit: "px",
-        title: "Media Padding",
-    },
-    borderRadius: {
-        type: ControlType.Number,
-        min: 0,
-        max: 32,
-        defaultValue: 8,
-        unit: "px",
-    },
-    mediaRadius: {
-        type: ControlType.Number,
-        min: 0,
-        max: 32,
-        defaultValue: 8,
-        unit: "px",
-        title: "Media Radius",
-    },
-    showShadow: {
-        type: ControlType.Boolean,
-        defaultValue: true,
-        enabledTitle: "On",
-        disabledTitle: "Off",
-    },
-    showGeneralContent: {
-        type: ControlType.Boolean,
-        defaultValue: false,
-        enabledTitle: "Show",
-        disabledTitle: "Hide",
-        title: "General Content",
-    },
-    generalContent: {
-        type: ControlType.String,
-        displayTextArea: true,
-        defaultValue: "This is general content that appears on all testimonials.",
+    content: {
+        type: ControlType.Object,
         title: "Content",
-        hidden: ({ showGeneralContent }) => !showGeneralContent,
-    },
-    generalContentColor: {
-        type: ControlType.Color,
-        defaultValue: "#666666",
-        title: "Content Color",
-        hidden: ({ showGeneralContent }) => !showGeneralContent,
-    },
-    generalContentFont: {
-        type: ControlType.Font,
-        controls: "extended",
-        defaultFontType: "sans-serif",
-        defaultValue: {
-            fontSize: "14px",
-            variant: "Regular",
-            letterSpacing: "-0.01em",
-            lineHeight: "1.4em",
+        controls: {
+            testimonials: {
+                type: ControlType.Array,
+                control: {
+                    type: ControlType.Object,
+                    controls: {
+                        name: {
+                            type: ControlType.String,
+                            defaultValue: "John Doe",
+                        },
+                        role: {
+                            type: ControlType.String,
+                            defaultValue: "CEO",
+                        },
+                        company: {
+                            type: ControlType.String,
+                            defaultValue: "Company Inc",
+                        },
+                        content: {
+                            type: ControlType.String,
+                            displayTextArea: true,
+                            defaultValue:
+                                "This product has completely transformed how we work. Highly recommended!",
+                        },
+                        avatar: {
+                            type: ControlType.ResponsiveImage,
+                        },
+                        video: {
+                            type: ControlType.File,
+                            allowedFileTypes: ["mp4", "webm", "mov"],
+                            title: "Video (Optional)",
+                        },
+                    },
+                },
+                defaultValue: [
+                    {
+                        name: "Sarah Johnson",
+                        role: "Product Manager",
+                        company: "TechCorp",
+                        content:
+                            "This platform has revolutionized our workflow. The intuitive design and powerful features have boosted our team's productivity significantly. Highly recommend for any growing business.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/GfGkADagM4KEibNcIiRUWlfrR0.jpg",
+                            alt: "Sarah Johnson",
+                        },
+                    },
+                    {
+                        name: "Michael Chen",
+                        role: "Lead Designer",
+                        company: "Creative Studio",
+                        content:
+                            "As a designer, I'm particular about tools. This exceeds expectations with remarkable attention to detail and seamless integration. It's become essential to our creative process.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/aNsAT3jCvt4zglbWCUoFe33Q.jpg",
+                            alt: "Michael Chen",
+                        },
+                    },
+                    {
+                        name: "Emily Rodriguez",
+                        role: "Senior Developer",
+                        company: "StartupXYZ",
+                        content:
+                            "Best investment this year. The API is well-documented, performance outstanding, and development experience smooth. Every tech team should consider this powerful solution for their projects.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/BYnxEV1zjYb9bhWh1IwBZ1ZoS60.jpg",
+                            alt: "Emily Rodriguez",
+                        },
+                    },
+                    {
+                        name: "David Kim",
+                        role: "Marketing Director",
+                        company: "Growth Co",
+                        content:
+                            "The analytics dashboard provides incredible insights into customer behavior. Our conversion rates doubled and we make confident data-driven decisions. The ROI has been absolutely remarkable.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/2uTNEj5aTl2K3NJaEFWMbnrA.jpg",
+                            alt: "David Kim",
+                        },
+                    },
+                    {
+                        name: "Lisa Anderson",
+                        role: "CTO",
+                        company: "Enterprise Inc",
+                        content:
+                            "Security, scalability, and performance delivered perfectly. Our infrastructure team was impressed with the architecture. Seamless integration saved months of development time and resources.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/f9RiWoNpmlCMqVRIHz8l8wYfeI.jpg",
+                            alt: "Lisa Anderson",
+                        },
+                    },
+                    {
+                        name: "James Wilson",
+                        role: "Founder & CEO",
+                        company: "Innovate Labs",
+                        content:
+                            "Game changer for our business. Automation features save countless hours weekly. Our team focuses on building great products and serving customers. Worth every penny invested.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/GfGkADagM4KEibNcIiRUWlfrR0.jpg",
+                            alt: "James Wilson",
+                        },
+                    },
+                    {
+                        name: "Rachel Martinez",
+                        role: "Operations Manager",
+                        company: "LogiTech Solutions",
+                        content:
+                            "We were skeptical initially, but this tool proved itself repeatedly. The efficiency gains are real, measurable, and have transformed how our operations team works daily.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/aNsAT3jCvt4zglbWCUoFe33Q.jpg",
+                            alt: "Rachel Martinez",
+                        },
+                    },
+                    {
+                        name: "Tom Anderson",
+                        role: "Sales Director",
+                        company: "Revenue Inc",
+                        content:
+                            "Our sales team loves it! Flawless CRM integration helped close thirty percent more deals. The mobile app keeps us productive and real-time notifications ensure nothing slips through.",
+                        avatar: {
+                            src: "https://framerusercontent.com/images/BYnxEV1zjYb9bhWh1IwBZ1ZoS60.jpg",
+                            alt: "Tom Anderson",
+                        },
+                    },
+                ],
+                title: "Testimonials",
+            },
+            showGeneralContent: {
+                type: ControlType.Boolean,
+                defaultValue: false,
+                enabledTitle: "Show",
+                disabledTitle: "Hide",
+                title: "Show General Content",
+            },
+            generalContent: {
+                type: ControlType.String,
+                displayTextArea: true,
+                defaultValue:
+                    "This is general content that appears on all testimonials.",
+                title: "General Content Text",
+            },
         },
-        title: "Content Font",
-        hidden: ({ showGeneralContent }) => !showGeneralContent,
+    },
+    layout: {
+        type: ControlType.Object,
+        title: "Layout",
+        controls: {
+            gridType: {
+                type: ControlType.Enum,
+                options: [
+                    "masonry",
+                    "uniform",
+                    "alternating",
+                    "staggered",
+                    "pyramid",
+                    "zigzag",
+                    "random",
+                    "featured",
+                ],
+                optionTitles: [
+                    "Masonry",
+                    "Uniform",
+                    "Alternating",
+                    "Staggered",
+                    "Pyramid",
+                    "Zigzag",
+                    "Random",
+                    "Featured",
+                ],
+                defaultValue: "masonry",
+                title: "Grid Type",
+            },
+            minColumnWidth: {
+                type: ControlType.Number,
+                min: 200,
+                max: 500,
+                defaultValue: 300,
+                unit: "px",
+                title: "Min Column Width",
+            },
+            gap: {
+                type: ControlType.Number,
+                min: 0,
+                max: 48,
+                defaultValue: 16,
+                unit: "px",
+                title: "Grid Gap",
+            },
+            minRowHeight: {
+                type: ControlType.Number,
+                min: 20,
+                max: 300,
+                defaultValue: 150,
+                unit: "px",
+                title: "Min Row Height",
+            },
+            testimonialAlign: {
+                type: ControlType.Enum,
+                options: ["top", "bottom"],
+                optionTitles: ["Top", "Bottom"],
+                defaultValue: "top",
+                displaySegmentedControl: true,
+                title: "Content Align",
+            },
+        },
+    },
+    responsive: {
+        type: ControlType.Object,
+        title: "Responsive",
+        controls: {
+            mobileColumns: {
+                type: ControlType.Number,
+                min: 1,
+                max: 6,
+                defaultValue: 1,
+                step: 1,
+                displayStepper: true,
+                title: "Mobile Columns",
+            },
+            tabletColumns: {
+                type: ControlType.Number,
+                min: 1,
+                max: 6,
+                defaultValue: 2,
+                step: 1,
+                displayStepper: true,
+                title: "Tablet Columns",
+            },
+            desktopColumns: {
+                type: ControlType.Number,
+                min: 1,
+                max: 6,
+                defaultValue: 3,
+                step: 1,
+                displayStepper: true,
+                title: "Desktop Columns",
+            },
+            mobileBreakpoint: {
+                type: ControlType.Number,
+                min: 320,
+                max: 1024,
+                defaultValue: 768,
+                unit: "px",
+                title: "Mobile Breakpoint",
+            },
+            tabletBreakpoint: {
+                type: ControlType.Number,
+                min: 768,
+                max: 1920,
+                defaultValue: 1024,
+                unit: "px",
+                title: "Tablet Breakpoint",
+            },
+        },
+    },
+    styling: {
+        type: ControlType.Object,
+        title: "Styling",
+        controls: {
+            cardBackground: {
+                type: ControlType.Color,
+                defaultValue: "#FFFFFF",
+                title: "Card Background",
+            },
+            borderRadius: {
+                type: ControlType.Number,
+                min: 0,
+                max: 32,
+                defaultValue: 8,
+                unit: "px",
+                title: "Card Radius",
+            },
+            showShadow: {
+                type: ControlType.Boolean,
+                defaultValue: true,
+                enabledTitle: "On",
+                disabledTitle: "Off",
+                title: "Shadow",
+            },
+            mediaRadius: {
+                type: ControlType.Number,
+                min: 0,
+                max: 32,
+                defaultValue: 8,
+                unit: "px",
+                title: "Media Radius",
+            },
+            avatarSize: {
+                type: ControlType.Number,
+                min: 24,
+                max: 100,
+                defaultValue: 48,
+                unit: "px",
+                title: "Avatar Size",
+            },
+            avatarRadius: {
+                type: ControlType.Number,
+                min: 0,
+                max: 50,
+                defaultValue: 24,
+                unit: "px",
+                title: "Avatar Radius",
+            },
+        },
+    },
+    typography: {
+        type: ControlType.Object,
+        title: "Typography",
+        controls: {
+            nameColor: {
+                type: ControlType.Color,
+                defaultValue: "#000000",
+                title: "Name Color",
+            },
+            nameFont: {
+                type: ControlType.Font,
+                controls: "extended",
+                defaultFontType: "sans-serif",
+                defaultValue: {
+                    fontSize: "15px",
+                    variant: "Medium",
+                    letterSpacing: "-0.01em",
+                    lineHeight: "1em",
+                },
+                title: "Name Font",
+            },
+            roleColor: {
+                type: ControlType.Color,
+                defaultValue: "#CCCCCC",
+                title: "Role Color",
+            },
+            roleFont: {
+                type: ControlType.Font,
+                controls: "extended",
+                defaultFontType: "sans-serif",
+                defaultValue: {
+                    fontSize: "15px",
+                    variant: "Medium",
+                    letterSpacing: "-0.01em",
+                    lineHeight: "1.3em",
+                },
+                title: "Role Font",
+            },
+            companyFont: {
+                type: ControlType.Font,
+                controls: "extended",
+                defaultFontType: "sans-serif",
+                defaultValue: {
+                    fontSize: "15px",
+                    variant: "Semibold",
+                    letterSpacing: "-0.01em",
+                    lineHeight: "1.3em",
+                },
+                title: "Company Font",
+            },
+            textColor: {
+                type: ControlType.Color,
+                defaultValue: "#000000",
+                title: "Content Color",
+            },
+            contentFont: {
+                type: ControlType.Font,
+                controls: "extended",
+                defaultFontType: "sans-serif",
+                defaultValue: {
+                    fontSize: "15px",
+                    variant: "Medium",
+                    letterSpacing: "-0.01em",
+                    lineHeight: "1.3em",
+                },
+                title: "Content Font",
+            },
+            generalContentColor: {
+                type: ControlType.Color,
+                defaultValue: "#666666",
+                title: "General Content Color",
+            },
+            generalContentFont: {
+                type: ControlType.Font,
+                controls: "extended",
+                defaultFontType: "sans-serif",
+                defaultValue: {
+                    fontSize: "14px",
+                    variant: "Regular",
+                    letterSpacing: "-0.01em",
+                    lineHeight: "1.4em",
+                },
+                title: "General Content Font",
+            },
+        },
+    },
+    spacing: {
+        type: ControlType.Object,
+        title: "Spacing",
+        controls: {
+            contentPadding: {
+                type: ControlType.Number,
+                min: 0,
+                max: 48,
+                defaultValue: 24,
+                unit: "px",
+                title: "Content Padding",
+            },
+            mediaPadding: {
+                type: ControlType.Number,
+                min: 0,
+                max: 48,
+                defaultValue: 16,
+                unit: "px",
+                title: "Media Padding",
+            },
+            nameContentSpacing: {
+                type: ControlType.Number,
+                min: 0,
+                max: 48,
+                defaultValue: 16,
+                unit: "px",
+                title: "Name to Content",
+            },
+        },
+    },
+    animation: {
+        type: ControlType.Object,
+        title: "Animation",
+        controls: {
+            enableAnimation: {
+                type: ControlType.Boolean,
+                defaultValue: true,
+                enabledTitle: "On",
+                disabledTitle: "Off",
+                title: "Enable Animation",
+            },
+            animationType: {
+                type: ControlType.Enum,
+                options: [
+                    "fade",
+                    "slide-up",
+                    "slide-down",
+                    "slide-left",
+                    "slide-right",
+                    "scale",
+                    "rotate",
+                    "bounce",
+                    "flip-x",
+                    "flip-y",
+                    "zoom",
+                    "swing",
+                    "blur",
+                ],
+                optionTitles: [
+                    "Fade",
+                    "Slide Up",
+                    "Slide Down",
+                    "Slide Left",
+                    "Slide Right",
+                    "Scale",
+                    "Rotate",
+                    "Bounce",
+                    "Flip X",
+                    "Flip Y",
+                    "Zoom",
+                    "Swing",
+                    "Blur",
+                ],
+                defaultValue: "fade",
+                title: "Animation Type",
+            },
+            animationDuration: {
+                type: ControlType.Number,
+                min: 0.1,
+                max: 2,
+                defaultValue: 0.5,
+                step: 0.1,
+                unit: "s",
+                title: "Animation Duration",
+            },
+            animationDelay: {
+                type: ControlType.Number,
+                min: 0,
+                max: 0.5,
+                defaultValue: 0.1,
+                step: 0.05,
+                unit: "s",
+                title: "Stagger Delay",
+            },
+            animationScale: {
+                type: ControlType.Number,
+                min: 0.5,
+                max: 1,
+                defaultValue: 0.9,
+                step: 0.05,
+                title: "Initial Scale",
+            },
+        },
     },
 })
