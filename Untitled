@@ -1,0 +1,5 @@
+cd "/path/to/Framer-Components-Library"
+git status
+git add -A
+git commit -m "Describe what you changed"
+git push origin main
