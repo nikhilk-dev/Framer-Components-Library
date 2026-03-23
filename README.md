@@ -48,4 +48,4 @@ You can read more documentation in [the Unframer repository](https://github.com/
 
 ## Maintainer
 
-**[Nikhil Kanda](https://github.com/nikhilk-dev)** — design & components.
+**[Nikhil Kanda] Nix (https://github.com/nikhilk-dev)** — design & components.
