@@ -46,8 +46,6 @@ The file [App.tsx](./src/App.tsx) contains an example generated component with y
 
 You can read more documentation in [the Unframer repository](https://github.com/remorses/unframer)
 
-Updated by Nikhil.
+## Maintainer
 
-Maintained by Nix.
-
-
+**[Nikhil Kanda](https://github.com/nikhilk-dev)** — design & components.
